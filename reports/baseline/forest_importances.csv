@@ -1,0 +1,5 @@
+feature_set,feature,impurity_importance
+baseline,HomeLast3Pts,0.1488917204035175
+baseline,HomeLast3GD,0.3527105597973166
+baseline,AwayLast3Pts,0.19313014023323472
+baseline,AwayLast3GD,0.30526757956593115

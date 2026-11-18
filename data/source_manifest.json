@@ -1,0 +1,44 @@
+[
+  {
+    "path": "data/raw/GuardianReportsAll.csv",
+    "url": "https://raw.githubusercontent.com/RyanBeal7/GuardianPreviewData/master/GuardianReportsAll.csv",
+    "sha256": "d28960113d6bf7226928c617e24b5f9ce720af0a56a5135625be4d0cef579d02",
+    "bytes": 826857,
+    "retrieved_utc": "2026-11-18T05:37:34.645937+00:00"
+  },
+  {
+    "path": "data/raw/raw_results/E0_1314.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/1314/E0.csv",
+    "sha256": "3cf16078fde2e0e6c6cb07ebdb20ca98d1a755c9508a18bbeb4ad6837fad2b42",
+    "bytes": 103642,
+    "retrieved_utc": "2026-11-18T05:37:36.474652+00:00"
+  },
+  {
+    "path": "data/raw/raw_results/E0_1415.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/1415/E0.csv",
+    "sha256": "76b7858051ff6b17f46f49f26fdc70c1f29537270492606f5cc63d67fad5d149",
+    "bytes": 100899,
+    "retrieved_utc": "2026-11-18T05:37:37.610460+00:00"
+  },
+  {
+    "path": "data/raw/raw_results/E0_1516.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/1516/E0.csv",
+    "sha256": "bd3502a18c38a1597fd9af62e2366b4015006d3528dd4d18b311bd6237bbc085",
+    "bytes": 100656,
+    "retrieved_utc": "2026-11-18T05:37:38.944639+00:00"
+  },
+  {
+    "path": "data/raw/raw_results/E0_1617.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/1617/E0.csv",
+    "sha256": "9625a7652b5f98fbd3e2e4d378c851fc246693f3343e34a72428d5b6e864d3e0",
+    "bytes": 99990,
+    "retrieved_utc": "2026-11-18T05:37:40.847913+00:00"
+  },
+  {
+    "path": "data/raw/raw_results/E0_1718.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/1718/E0.csv",
+    "sha256": "4f3389365ef3f7ac966764ed8ba67cf3b79f5aebed18dd224099c4b2c98bc67b",
+    "bytes": 100734,
+    "retrieved_utc": "2026-11-18T05:37:42.252155+00:00"
+  }
+]

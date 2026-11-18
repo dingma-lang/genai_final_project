@@ -1,0 +1,10 @@
+family,feature_set,actual,predicted,count
+logistic,baseline,A,A,26
+logistic,baseline,A,D,0
+logistic,baseline,A,H,50
+logistic,baseline,D,A,15
+logistic,baseline,D,D,0
+logistic,baseline,D,H,56
+logistic,baseline,H,A,18
+logistic,baseline,H,D,0
+logistic,baseline,H,H,114

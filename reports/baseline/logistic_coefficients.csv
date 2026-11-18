@@ -1,0 +1,13 @@
+feature_set,outcome,feature,coefficient
+baseline,A,HomeLast3Pts,-0.0539726486300866
+baseline,A,HomeLast3GD,-0.12318292278658184
+baseline,A,AwayLast3Pts,0.07139577720151781
+baseline,A,AwayLast3GD,0.10601293102259879
+baseline,D,HomeLast3Pts,0.027877775225417283
+baseline,D,HomeLast3GD,-0.0501858457210955
+baseline,D,AwayLast3Pts,0.007881984175468553
+baseline,D,AwayLast3GD,0.02039658902857689
+baseline,H,HomeLast3Pts,0.0260948734046693
+baseline,H,HomeLast3GD,0.17336876850767735
+baseline,H,AwayLast3Pts,-0.07927776137698628
+baseline,H,AwayLast3GD,-0.12640952005117578

@@ -1,0 +1,11 @@
+data/raw/
+data/processed/
+data/llm_inputs.jsonl
+data/pilot_labels.csv
+data/*responses/
+data/*.jsonl
+__pycache__/
+.mplconfig/
+*.joblib
+*.zip
+.env

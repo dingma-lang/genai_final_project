@@ -1,0 +1,14 @@
+{
+  "matched_previews": 1409,
+  "eligible": 1293,
+  "train": 1014,
+  "test": 279,
+  "pilot": 50,
+  "pilot_from_training_only": true,
+  "baseline_values_recomputed_from_strictly_prior_fixtures": true,
+  "no_duplicate_match_or_fixture_ids": true,
+  "all_previews_before_match_date": true,
+  "analysis_sha256": "b8899feb7b8ef6fc80dd3f173a474c054e9f0198275458fd31bd4d6ebf2f6a74",
+  "test_policy": "Final season held out. Hyperparameters selected by earlier-season forward validation.",
+  "masking_limit": "Heuristic alias/byline masking is partial. Players, managers, venues, and indirect clues remain; masking is not proof against memorization."
+}

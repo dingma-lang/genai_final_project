@@ -1,0 +1,5 @@
+family,feature_set,n_test,accuracy,log_loss,cv_log_loss,parameters
+benchmark,always_home,279,0.4731182795698925,,,{}
+benchmark,train_class_prior,279,0.4731182795698925,1.0598966494615372,,{}
+logistic,baseline,279,0.5017921146953405,1.0098406882907327,1.0517734715617235,"{""C"": 0.01}"
+random_forest,baseline,279,0.4946236559139785,1.0182324483198342,1.062871928833838,"{""max_depth"": 3, ""min_samples_leaf"": 10}"

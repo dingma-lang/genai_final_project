@@ -1,0 +1,22 @@
+family,params,validation_season,n_fit,n_validation,validation_log_loss,feature_set
+logistic,"{""C"": 0.01}",2014-15,110,303,1.0852209827837735,baseline
+logistic,"{""C"": 0.01}",2015-16,413,300,1.081634186766191,baseline
+logistic,"{""C"": 0.01}",2016-17,713,301,0.9883422075696255,baseline
+logistic,"{""C"": 0.1}",2014-15,110,303,1.0836415233828391,baseline
+logistic,"{""C"": 0.1}",2015-16,413,300,1.090083141103735,baseline
+logistic,"{""C"": 0.1}",2016-17,713,301,0.9850090398956713,baseline
+logistic,"{""C"": 1.0}",2014-15,110,303,1.0988155341354353,baseline
+logistic,"{""C"": 1.0}",2015-16,413,300,1.097673390367623,baseline
+logistic,"{""C"": 1.0}",2016-17,713,301,0.9859955161899341,baseline
+logistic,"{""C"": 10.0}",2014-15,110,303,1.112486877798556,baseline
+logistic,"{""C"": 10.0}",2015-16,413,300,1.0991830254107597,baseline
+logistic,"{""C"": 10.0}",2016-17,713,301,0.9861758698112666,baseline
+random_forest,"{""max_depth"": 3, ""min_samples_leaf"": 10}",2014-15,110,303,1.0941241865295437,baseline
+random_forest,"{""max_depth"": 3, ""min_samples_leaf"": 10}",2015-16,413,300,1.0979698764168258,baseline
+random_forest,"{""max_depth"": 3, ""min_samples_leaf"": 10}",2016-17,713,301,0.9964306718348506,baseline
+random_forest,"{""max_depth"": 5, ""min_samples_leaf"": 10}",2014-15,110,303,1.0958115803129795,baseline
+random_forest,"{""max_depth"": 5, ""min_samples_leaf"": 10}",2015-16,413,300,1.1059094482688914,baseline
+random_forest,"{""max_depth"": 5, ""min_samples_leaf"": 10}",2016-17,713,301,1.001039944442577,baseline
+random_forest,"{""max_depth"": null, ""min_samples_leaf"": 10}",2014-15,110,303,1.0958115803129795,baseline
+random_forest,"{""max_depth"": null, ""min_samples_leaf"": 10}",2015-16,413,300,1.1110763544105897,baseline
+random_forest,"{""max_depth"": null, ""min_samples_leaf"": 10}",2016-17,713,301,1.021109117128377,baseline
