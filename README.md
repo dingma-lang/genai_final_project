@@ -2,7 +2,11 @@
 
 BUS244A final project: test whether LLM-extracted features from Guardian pre-match articles improve Premier League home-win/draw/away-win prediction beyond recent match results. This repository currently contains the Milestone 2 modeling workflow and baseline results.
 
-The recent-results baseline has been trained and evaluated. The LLM-only and combined models are implemented but have **not** been fitted: no extracted features, human pilot annotations, or locally configured Anthropic API key were supplied. This folder follows the modeling plan in Milestone 1; a separate Milestone 2 assignment sheet was not available.
+The recent-results baseline has been trained and evaluated. The LLM-only and combined models are implemented but have **not** been fitted. The extraction route has been changed from Claude to **Codex CLI with existing ChatGPT sign-in**; an Anthropic key is not required for this route. Independent human pilot annotations remain outstanding. This folder follows the modeling plan in Milestone 1; a separate Milestone 2 assignment sheet was not available.
+
+**Codex pilot status: 50/50 previews extracted in 10 batches.** Human agreement, full extraction, and LLM-feature model training remain pending. See [the pilot report](reports/quality/pilot_status.md).
+
+See [the Codex protocol and commands](docs/CODEX_METHOD.md) for the current extraction workflow, settings, and departures from the Claude plan. The Claude instructions below remain as the original optional API route.
 
 ## Results available now
 
@@ -53,9 +57,9 @@ $PY scripts/model.py
 $PY -m unittest discover -s tests -v
 ```
 
-Source downloads are skipped when the existing files match their saved hashes. Preparation preserves an existing pilot annotation sheet. The source text remains local; it belongs to The Guardian and is not included in the code/results ZIP.
+Source downloads are skipped when the existing files match their saved hashes. Preparation preserves an existing pilot annotation sheet. The source text remains local; it belongs to The Guardian and is excluded from Git.
 
-## Finish the LLM comparison
+## Original Claude API route (optional)
 
 1. Read `prompts/extraction.txt` and manually label `data/pilot_labels.csv` **before looking at model labels**. Fill all ten value columns, the evidence columns, and `annotator`. Use `unknown` with empty evidence when unsupported. Supporting evidence for other labels must be a contiguous quote from that row's masked text. Do not fill human labels with AI output and report them as human work.
 2. Configure `ANTHROPIC_API_KEY` in your local shell or credential manager, outside this project. Do not paste credentials into chat. Choose an explicit Claude model identifier supporting `temperature=0`, preferably a dated snapshot. The script uses Anthropic's Messages API and records the requested/returned model, API version, prompt/input hashes, usage, and raw responses. The default API version is `2023-06-01`; real account/model compatibility remains untested. If temperature zero is unsupported, select a compatible model or document a deliberate change to the Milestone 1 protocol.
@@ -93,7 +97,7 @@ Sentiment is numeric -2 through +2, with a separate unknown indicator. Unknown s
 
 Masking handles known team aliases, some nicknames, year/date strings, and a heuristic trailing byline. It cannot guarantee anonymity. Ambiguous aliases are logged rather than replaced; players, managers, venues, and indirect historical clues may remain. `data/masking_log.csv` identifies automated changes and missing HOME/AWAY tokens for review. Review of excluded previews and semantic evidence quality is still a human task; the code does not claim it has been completed.
 
-The live paid API, human/LLM agreement, extraction repeatability, historical-knowledge diagnostic, and real LLM models have **not been run**. Local tests cover cohort/split integrity, feature isolation, training-only scaling, synthetic full-feature pipelines, schema/evidence rejection, missing credentials, and a mocked HTTP request. Synthetic test labels exist only inside tests and are never reported as extracted data.
+The live Codex pilot has completed. The original Anthropic API route, human/LLM agreement, extraction repeatability, historical-knowledge diagnostic, and real LLM prediction models have **not been run**. Local tests cover cohort/split integrity, feature isolation, training-only scaling, synthetic full-feature pipelines, schema/evidence rejection, missing credentials, and a mocked HTTP request. Synthetic test labels exist only inside tests and are never reported as extracted data.
 
 New modeling code, the draft extraction prompt, and these notes were prepared with Codex assistance. Team review and independent pilot annotation remain to be completed.
 

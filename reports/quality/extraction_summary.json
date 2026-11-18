@@ -1,0 +1,81 @@
+{
+  "n_previews": 50,
+  "feature_values": 500,
+  "llm_provenance": [
+    [
+      "gpt-6.1-sol",
+      "gpt-6.1-sol",
+      "e40a4e5b3baee0073b206f20a2d08e8287d96227492e41db017f943622916f69",
+      "codex-cli 0.169.0-alpha.11.1",
+      "codex_cli",
+      "353c4914b6b694e4fb6552497a2057348d31262e763445a7e9b7efccdbc4945a"
+    ]
+  ],
+  "feature_file_sha256": "f2a82d8c28d4cfcfe843a02a82628a96cd79f67b283b518d2a2158b3a79d7e5a",
+  "value_counts": {
+    "home_sentiment": {
+      "1": 14,
+      "-1": 11,
+      "unknown": 8,
+      "-2": 6,
+      "0": 6,
+      "2": 5
+    },
+    "home_form": {
+      "unknown": 21,
+      "poor": 17,
+      "good": 8,
+      "mixed": 4
+    },
+    "home_availability": {
+      "unknown": 40,
+      "minor": 7,
+      "major": 3
+    },
+    "home_motivation": {
+      "unknown": 36,
+      "high": 13,
+      "low": 1
+    },
+    "home_managerial_uncertainty": {
+      "unknown": 43,
+      "yes": 7
+    },
+    "away_sentiment": {
+      "1": 18,
+      "-1": 11,
+      "unknown": 8,
+      "-2": 5,
+      "2": 4,
+      "0": 4
+    },
+    "away_form": {
+      "unknown": 18,
+      "poor": 16,
+      "good": 13,
+      "mixed": 3
+    },
+    "away_availability": {
+      "unknown": 43,
+      "major": 5,
+      "minor": 2
+    },
+    "away_motivation": {
+      "unknown": 36,
+      "high": 13,
+      "low": 1
+    },
+    "away_managerial_uncertainty": {
+      "unknown": 47,
+      "yes": 3
+    }
+  },
+  "batch_count": 10,
+  "batch_usage_total": {
+    "input_tokens": 133702,
+    "cached_input_tokens": 0,
+    "output_tokens": 21538
+  },
+  "human_agreement_computed": false,
+  "interpretation": "Output IDs, provenance, values, and quotation occurrence were validated locally. This does not measure semantic extraction accuracy, human agreement, repeatability, or absence of memorized outcomes."
+}

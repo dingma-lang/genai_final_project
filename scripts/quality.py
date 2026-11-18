@@ -53,15 +53,32 @@ def main():
     parser.add_argument('--human-labels', type=Path)
     parser.add_argument('--repeat', type=Path)
     parser.add_argument('--metadata', type=Path)
+    parser.add_argument('--summary-only', action='store_true', help='Report output coverage and value counts without claiming human agreement')
     args = parser.parse_args()
     out = ROOT / 'reports/quality'
     out.mkdir(parents=True, exist_ok=True)
-    if args.human_labels or args.repeat:
+    if args.human_labels or args.repeat or args.summary_only:
         features, provenance = load_records(args.features, read_inputs())
         coverage = []
         for feature in FEATURES:
             coverage.append({'feature': feature, 'n': len(features), 'unknown_share': float(features[feature].eq('unknown').mean())})
         pd.DataFrame(coverage).to_csv(out / 'feature_coverage.csv', index=False)
+        if args.summary_only:
+            batches = {}
+            for line in args.features.read_text().splitlines():
+                record = json.loads(line)
+                if record.get('batch_id'):
+                    batches[record['batch_id']] = record.get('usage_at_batch_level') or {}
+            usage = {key: sum(int(value.get(key, 0)) for value in batches.values())
+                     for key in ['input_tokens', 'cached_input_tokens', 'output_tokens']} if batches else None
+            write_json(out / 'extraction_summary.json', {
+                'n_previews': len(features), 'feature_values': len(features) * len(FEATURES),
+                'llm_provenance': sorted([list(x) for x in provenance]),
+                'feature_file_sha256': digest(args.features.read_text()),
+                'value_counts': {feature: {str(key): int(value) for key, value in features[feature].value_counts().items()} for feature in FEATURES},
+                'batch_count': len(batches) if batches else None, 'batch_usage_total': usage,
+                'human_agreement_computed': False,
+                'interpretation': 'Output IDs, provenance, values, and quotation occurrence were validated locally. This does not measure semantic extraction accuracy, human agreement, repeatability, or absence of memorized outcomes.'})
         if args.human_labels:
             human = human_labels(args.human_labels)
             model = features[features.MatchID.isin(human.MatchID)]
@@ -107,8 +124,8 @@ def main():
             'baseline_accuracy_same_subset': float(diagnostic.logistic__baseline_prediction.eq(diagnostic.FTR).mean()),
             'always_home_accuracy_same_subset': float(diagnostic.FTR.eq('H').mean()),
             'limitation': 'Metadata-only accuracy cannot prove memorization: team identities encode legitimate strength and home advantage. This diagnostic also cannot establish the absence of outcome contamination in extraction.'})
-    if not (args.human_labels or args.repeat or args.metadata):
-        parser.error('Provide --human-labels, --repeat, or --metadata')
+    if not (args.human_labels or args.repeat or args.metadata or args.summary_only):
+        parser.error('Provide --human-labels, --repeat, --metadata, or --summary-only')
     print(f'Quality outputs: {out}')
 
 

@@ -1,0 +1,11 @@
+feature,n,unknown_share
+home_sentiment,50,0.16
+home_form,50,0.42
+home_availability,50,0.8
+home_motivation,50,0.72
+home_managerial_uncertainty,50,0.86
+away_sentiment,50,0.16
+away_form,50,0.36
+away_availability,50,0.86
+away_motivation,50,0.72
+away_managerial_uncertainty,50,0.94

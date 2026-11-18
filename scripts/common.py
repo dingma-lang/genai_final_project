@@ -89,10 +89,12 @@ def load_records(path, inputs):
             raise ValueError(f'Features are for different masked text: {mid}')
         if not row.get('model') or not row.get('prompt_sha256'):
             raise ValueError('Missing feature provenance')
-        provenance.add((row['model'], row.get('returned_model') or row['model'], row['prompt_sha256'], row.get('api_version', 'unspecified')))
+        provenance.add((row['model'], row.get('returned_model') or row['model'], row['prompt_sha256'],
+                        row.get('api_version', 'unspecified'), row.get('provider', 'anthropic_api'),
+                        row.get('settings_sha256', 'unspecified')))
         records.append({'MatchID': mid, **validate_labels(row['labels'], source['text'])})
     if len(provenance) != 1:
-        raise ValueError('Use one model and one frozen prompt for an analysis')
+        raise ValueError('Use one model, provider, prompt, and extraction-settings version for an analysis')
     return pd.DataFrame(records), provenance
 
 
