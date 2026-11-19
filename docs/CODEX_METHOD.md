@@ -1,5 +1,7 @@
 # Codex feature extraction protocol
 
+This document records the original 50-preview pilot protocol. The team subsequently chose to omit independent human annotation and proceed with the full run; [the current full-run protocol](FULL_RUN_PROTOCOL.md) documents the low-effort compact batches, automated evidence filtering, and model reproduction workflow. The high-effort pilot remains a separate artifact.
+
 The team chose to replace the Claude API extraction route proposed in Milestone 1 with Codex CLI extraction using an existing ChatGPT sign-in. This changes the extraction provider and sampling controls; it does not change the research question, feature definitions, fixed 1,014/279 modeling cohort, evaluation metrics, or baseline models.
 
 The extractor uses `gpt-6.1-sol` with high reasoning effort, matching the configured local CLI model and effort when this route was set up. The selected model identifier, CLI version, exact prompt, output schema hash, settings hash, input hashes, actual batch membership, timestamps, usage, and raw CLI responses are recorded. The CLI does not return an immutable provider snapshot identifier, so the selected model name should not be described as an immutable model version. It also does not expose a temperature control: **temperature zero was not set**, unlike the original Claude plan.

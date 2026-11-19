@@ -15,7 +15,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix, log_loss
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-from common import ALLOWED, BASE, CLASSES, ROOT, TRAIN_SEASONS, TEST_SEASON, digest, load_analysis, load_records, read_inputs, write_json
+from common import ALLOWED, BASE, CLASSES, ROOT, TRAIN_SEASONS, TEST_SEASON, digest, load_analysis, load_feature_values, load_records, read_inputs, write_json
 
 SENTIMENT = [f'{side}_sentiment_{suffix}' for side in ['home', 'away'] for suffix in ['score', 'unknown']]
 CONTEXT = [f'{side}_{key}' for side in ['home', 'away'] for key in ALLOWED if key != 'sentiment']
@@ -144,12 +144,12 @@ def plot_results(metrics, output):
     plt.close(fig)
 
 
-def run(features=None):
+def run(features=None, human_validation='pending'):
     df = load_analysis()
     eligible = df.loc[df[BASE].notna().all(axis=1)].copy()
     provenance = None
     if features:
-        values, provenance = load_records(features, read_inputs())
+        values, provenance = load_feature_values(features) if features.suffix == '.csv' else load_records(features, read_inputs())
         missing = set(eligible.MatchID) - set(values.MatchID)
         if missing:
             raise ValueError(f'LLM features missing for {len(missing)} eligible matches; the cohort must remain fixed')
@@ -232,7 +232,8 @@ def run(features=None):
         'selection': 'Minimum pooled forward-validation log loss; ties follow fixed candidate order. Test metrics never enter tuning.',
         'folds': [{'validation_season': season, 'train_n': len(fit), 'validation_n': len(val)} for fit, val, season in folds],
         'interpretation': 'Logistic coefficients use train-standardized numeric inputs and one-hot categories; associations, not causal effects. Forest importance is descriptive and biased.',
-        'llm_models_fitted': bool(features), 'extraction_quality_checks_complete': False})
+        'llm_models_fitted': bool(features), 'extraction_quality_checks_complete': False,
+        'human_reference_validation': human_validation})
     plot_results(metrics, output)
     lines = ['# Modeling results', '', f'Training: {len(train)} matches (2013–2017). Test: {len(test)} matches (2017–2018).', '',
              'Hyperparameters were chosen using three expanding-season validation folds inside the training period. Scaling is fitted within each fold. The final season is used for evaluation only.', '',
@@ -250,7 +251,21 @@ def run(features=None):
         lines.append('The LLM-only, combined, and feature-ablation models have not been run because no extracted LLM features are available. These baseline results do not answer whether LLM features help.')
     else:
         lines.extend(['The main hypothesis compares combined versus baseline logistic log loss. See paired_comparisons.json for week-block bootstrap intervals. Compare baseline_plus_sentiment and baseline_plus_context to assess H3; this is an exploratory ablation, not a causal test.', '',
-                      'Before reporting the LLM results as complete, also review the human pilot agreement, masking limitations, repeat-extraction agreement, exclusion log, and metadata-only leakage diagnostic. Model fitting alone does not establish extraction quality or absence of contamination.'])
+                      'Review masking limitations, repeat-extraction agreement, the exclusion log, and the metadata-only leakage diagnostic alongside these results. Model fitting alone does not establish extraction quality or absence of contamination.'])
+        logistic = {row['feature_set']: row for row in scores if row['family'] == 'logistic'}
+        home_accuracy = scores[0]['accuracy']
+        h1_difference = logistic['llm_only']['accuracy'] - home_accuracy
+        h2 = comparisons['logistic']
+        h3_difference = logistic['baseline_plus_sentiment']['log_loss'] - logistic['baseline_plus_context']['log_loss']
+        interval = h2['log_loss_difference_95pct_interval']
+        lines.extend(['', 'Observed hypothesis comparisons (logistic regression):', '',
+                      f'- H1: LLM-only accuracy minus always-home accuracy = {h1_difference:+.2%}.',
+                      f'- H2: Combined minus baseline log loss = {h2["log_loss_difference"]:+.4f}; exploratory 95% week-block interval [{interval[0]:+.4f}, {interval[1]:+.4f}]. Negative values favor combined.',
+                      f'- H3: Baseline-plus-sentiment minus baseline-plus-context log loss = {h3_difference:+.4f}. Negative values favor the sentiment addition. This ablation does not establish general or causal feature importance.'])
+        if human_validation == 'omitted':
+            lines.extend(['', 'Independent human reference annotation was omitted by the team, departing from the 50-preview hand-labeled pilot proposed in Milestone 1. The classifier targets are actual match outcomes, so model training does not require human feature labels. Automated schema/quotation checks and repeatability do not establish the semantic accuracy of the extracted features.'])
+        else:
+            lines.extend(['', 'Independent human pilot agreement remains pending and must not be reported as completed.'])
     lines.extend(['', 'Limitations: one historical league and one held-out season; small sample; previews cover a selected subset of fixtures. The test season has now been inspected for this fixed design and must not be used for further model or prompt tuning.', ''])
     (output / 'results.md').write_text('\n'.join(lines))
     return metrics
@@ -258,6 +273,7 @@ def run(features=None):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--features', type=Path, help='Validated extraction JSONL; omit to run actual baseline only')
+    parser.add_argument('--features', type=Path, help='Extraction JSONL or exported feature CSV with its manifest; omit for baseline only')
+    parser.add_argument('--human-validation', choices=['pending', 'omitted'], default='pending')
     args = parser.parse_args()
-    run(args.features)
+    run(args.features, args.human_validation)

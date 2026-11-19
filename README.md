@@ -1,14 +1,10 @@
 # EPL match-preview modeling
 
-BUS244A final project: test whether LLM-extracted features from Guardian pre-match articles improve Premier League home-win/draw/away-win prediction beyond recent match results. This repository currently contains the Milestone 2 modeling workflow and baseline results.
+This BUS244A final project tests whether features extracted from Guardian pre-match previews improve Premier League home-win, draw, and away-win predictions beyond recent match results.
 
-The recent-results baseline has been trained and evaluated. The LLM-only and combined models are implemented but have **not** been fitted. The extraction route has been changed from Claude to **Codex CLI with existing ChatGPT sign-in**; an Anthropic key is not required for this route. Independent human pilot annotations remain outstanding. This folder follows the modeling plan in Milestone 1; a separate Milestone 2 assignment sheet was not available.
+Codex extracted features from all **1,409 matched previews**. The baseline, LLM-only, and combined models are trained and evaluated. Independent human annotation was omitted from this run, a change from Milestone 1. The full run used `gpt-6.1-sol` at low reasoning effort in batches of 25. The initial high-effort pilot remains documented separately. [Full run protocol](docs/FULL_RUN_PROTOCOL.md) · [Pilot report](reports/quality/pilot_status.md)
 
-**Codex pilot status: 50/50 previews extracted in 10 batches.** Human agreement, full extraction, and LLM-feature model training remain pending. See [the pilot report](reports/quality/pilot_status.md).
-
-See [the Codex protocol and commands](docs/CODEX_METHOD.md) for the current extraction workflow, settings, and departures from the Claude plan. The Claude instructions below remain as the original optional API route.
-
-## Results available now
+## Held-out results
 
 The source data reproduce the Milestone 1 counts: 1,506 raw previews, 1,409 joined previews, and 1,293 cases with complete three-match history. Training uses 1,014 matches from 2013–2017; evaluation uses 279 matches from 2017–2018.
 
@@ -16,10 +12,16 @@ The source data reproduce the Milestone 1 counts: 1,506 raw previews, 1,409 join
 | --- | ---: | ---: |
 | Always home | 47.31% | Not scored |
 | Smoothed training class prior | 47.31% | 1.0599 |
-| Multinomial logistic regression | 50.18% | 1.0098 |
-| Random forest | 49.46% | 1.0182 |
+| Logistic regression, recent results | 50.18% | 1.0098 |
+| Logistic regression, Codex features | 48.75% | 1.0477 |
+| Logistic regression, combined | 51.25% | 1.0074 |
+| Random forest, recent results | 49.46% | 1.0182 |
+| Random forest, Codex features | 47.31% | 1.0487 |
+| Random forest, combined | 50.18% | 1.0185 |
 
-Logistic regression correctly classified 140/279 matches, eight more than always home (132/279). It classified **none as draws**, including none of the 71 actual draws. These results establish a baseline; they do not establish that LLM features help or that the small accuracy difference is statistically reliable.
+The combined logistic model got three more matches right than the recent-results baseline (143 versus 140). Its log-loss change was −0.0025, with an exploratory 95% interval from −0.0145 to +0.0090. The gain is small and uncertain. The combined forest had slightly higher log loss than its baseline, and the combined logistic model predicted zero draws. [Full results and feature ablations](reports/full/results.md)
+
+**Historical-outcome leakage risk.** In a separate diagnostic, Codex recovered all 279 held-out outcomes from team names and match dates alone. The request hashes match prompts reconstructed from those fields, and the recorded responses contain zero tool events. Masked preview text can still contain identifying clues, so treat the results from Codex features as exploratory. [Extraction quality and leakage findings](reports/quality/full/findings.md)
 
 Regularization and forest depth were chosen using pooled log loss from three expanding-season folds: validate on 2014–2015 after training on earlier data, then 2015–2016, then 2016–2017. Test scores do not select parameters. Numeric scaling is fitted only on each training fold. No team identifiers, dates, target-match goals, or results are predictors. During the test season, prior test-season results may update the next fixture's rolling history; this is rolling pre-match prediction, not a single preseason forecast.
 
@@ -27,6 +29,10 @@ The final-season outcomes have now been inspected for this fixed design. Do not 
 
 ## Files to open
 
+- [Full results and hypothesis comparisons](reports/full/results.md)
+- [Test metrics](reports/full/metrics.csv) and [per-match predictions](reports/full/test_predictions.csv)
+- [Derived feature values](data/llm_feature_values.csv) and [provenance](data/llm_feature_values.manifest.json)
+- [Extraction quality and leakage findings](reports/quality/full/findings.md)
 - `reports/baseline/results.md`: baseline findings.
 - `reports/baseline/metrics.csv`: numeric results.
 - `reports/baseline/model_comparison.png`: results figure.
@@ -53,11 +59,11 @@ PY=python3
 $PY scripts/download_data.py
 $PY scripts/build_dataset.py data/raw/GuardianReportsAll.csv data/raw/raw_results data/processed
 $PY scripts/prepare.py
-$PY scripts/model.py
+$PY scripts/model.py --features data/llm_feature_values.csv --human-validation omitted
 $PY -m unittest discover -s tests -v
 ```
 
-Source downloads are skipped when the existing files match their saved hashes. Preparation preserves an existing pilot annotation sheet. The source text remains local; it belongs to The Guardian and is excluded from Git.
+The downloaded source files are reused when their hashes match. The exported CSV reproduces the model comparison without another Codex run. Guardian text and raw Codex responses are excluded from Git.
 
 ## Original Claude API route (optional)
 
@@ -97,8 +103,8 @@ Sentiment is numeric -2 through +2, with a separate unknown indicator. Unknown s
 
 Masking handles known team aliases, some nicknames, year/date strings, and a heuristic trailing byline. It cannot guarantee anonymity. Ambiguous aliases are logged rather than replaced; players, managers, venues, and indirect historical clues may remain. `data/masking_log.csv` identifies automated changes and missing HOME/AWAY tokens for review. Review of excluded previews and semantic evidence quality is still a human task; the code does not claim it has been completed.
 
-The live Codex pilot has completed. The original Anthropic API route, human/LLM agreement, extraction repeatability, historical-knowledge diagnostic, and real LLM prediction models have **not been run**. Local tests cover cohort/split integrity, feature isolation, training-only scaling, synthetic full-feature pipelines, schema/evidence rejection, missing credentials, and a mocked HTTP request. Synthetic test labels exist only inside tests and are never reported as extracted data.
+The full Codex extraction and model comparison are complete. The original Anthropic API route remains untested. Independent human agreement was omitted, so the accuracy of Codex's interpretation of individual previews remains unmeasured. Automated checks cover the feature schema, the presence of supporting quotes, and the model's consistency on a repeated batch. [Full run protocol](docs/FULL_RUN_PROTOCOL.md)
 
-New modeling code, the draft extraction prompt, and these notes were prepared with Codex assistance. Team review and independent pilot annotation remain to be completed.
+Codex assisted with the modeling code, extraction prompt, and documentation and generated the preview features.
 
 Technical references: [Anthropic Messages API](https://platform.claude.com/docs/en/api/messages/create), [scikit-learn temporal validation](https://scikit-learn.org/stable/modules/cross_validation.html#time-series-split), and [log loss](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.log_loss.html).

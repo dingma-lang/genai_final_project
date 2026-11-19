@@ -1,0 +1,7 @@
+{
+  "n": 279,
+  "metadata_only_accuracy": 1.0,
+  "baseline_accuracy_same_subset": 0.5017921146953405,
+  "always_home_accuracy_same_subset": 0.4731182795698925,
+  "limitation": "Metadata-only accuracy cannot prove memorization: team identities encode legitimate strength and home advantage. This diagnostic also cannot establish the absence of outcome contamination in extraction."
+}

@@ -1,0 +1,34 @@
+{
+  "logistic": {
+    "contrast": "combined minus baseline; negative log-loss difference favors combined",
+    "log_loss_difference": -0.002487164835308291,
+    "log_loss_difference_95pct_interval": [
+      -0.014480825615668297,
+      0.008975314257143551
+    ],
+    "accuracy_difference": 0.010752688172043012,
+    "accuracy_difference_95pct_interval": [
+      -0.013469150969150969,
+      0.03571428571428571
+    ],
+    "bootstrap_repetitions": 2000,
+    "calendar_week_blocks": 32,
+    "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+  },
+  "random_forest": {
+    "contrast": "combined minus baseline; negative log-loss difference favors combined",
+    "log_loss_difference": 0.00025957074009603294,
+    "log_loss_difference_95pct_interval": [
+      -0.01003604212202564,
+      0.01065067837743529
+    ],
+    "accuracy_difference": 0.007168458781362007,
+    "accuracy_difference_95pct_interval": [
+      -0.013939727367198484,
+      0.031141868512110725
+    ],
+    "bootstrap_repetitions": 2000,
+    "calendar_week_blocks": 32,
+    "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+  }
+}

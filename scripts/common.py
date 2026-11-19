@@ -98,6 +98,31 @@ def load_records(path, inputs):
     return pd.DataFrame(records), provenance
 
 
+def load_feature_values(path, analysis_path=None):
+    path = Path(path)
+    manifest = json.loads(path.with_suffix('.manifest.json').read_text())
+    if manifest.get('format') != 'feature_values_v1' or digest(path.read_text()) != manifest['values_sha256']:
+        raise ValueError('Feature-values file or manifest hash is invalid')
+    analysis_path = Path(analysis_path) if analysis_path else ROOT / 'data/processed/previews_with_results.csv'
+    if digest(analysis_path.read_text()) != manifest['analysis_sha256']:
+        raise ValueError('Feature values belong to a different analysis dataset')
+    frame = pd.read_csv(path, keep_default_na=False)
+    if list(frame.columns) != ['MatchID'] + FEATURES or frame.empty or frame.MatchID.duplicated().any():
+        raise ValueError('Invalid feature-values columns, empty file, or duplicate IDs')
+    if not pd.api.types.is_integer_dtype(frame.MatchID):
+        raise ValueError('Feature MatchIDs must be integers')
+    for feature in FEATURES:
+        key = feature.split('_', 1)[1]
+        if key == 'sentiment':
+            frame[feature] = frame[feature].map(lambda value: int(value) if str(value) in ['-2', '-1', '0', '1', '2'] else value)
+        if not frame[feature].isin(ALLOWED[key]).all():
+            raise ValueError('Invalid exported feature category: ' + feature)
+    provenance = {tuple(row) for row in manifest['llm_provenance']}
+    if len(provenance) != 1 or len(frame) != manifest['n_previews']:
+        raise ValueError('Invalid exported feature provenance or row count')
+    return frame, provenance
+
+
 def read_inputs(path=None):
     return [json.loads(line) for line in (Path(path) if path else ROOT / 'data/llm_inputs.jsonl').read_text().splitlines()]
 

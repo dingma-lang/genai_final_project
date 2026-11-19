@@ -54,8 +54,9 @@ def main():
     parser.add_argument('--repeat', type=Path)
     parser.add_argument('--metadata', type=Path)
     parser.add_argument('--summary-only', action='store_true', help='Report output coverage and value counts without claiming human agreement')
+    parser.add_argument('--output-dir', type=Path, help='Keep separate reports for the pilot and full extraction')
     args = parser.parse_args()
-    out = ROOT / 'reports/quality'
+    out = args.output_dir or ROOT / 'reports/quality'
     out.mkdir(parents=True, exist_ok=True)
     if args.human_labels or args.repeat or args.summary_only:
         features, provenance = load_records(args.features, read_inputs())
@@ -65,10 +66,14 @@ def main():
         pd.DataFrame(coverage).to_csv(out / 'feature_coverage.csv', index=False)
         if args.summary_only:
             batches = {}
+            correction_counts = {}
             for line in args.features.read_text().splitlines():
                 record = json.loads(line)
                 if record.get('batch_id'):
                     batches[record['batch_id']] = record.get('usage_at_batch_level') or {}
+                for correction in record.get('postprocessing', []):
+                    key = correction['feature'] + ': ' + correction['reason']
+                    correction_counts[key] = correction_counts.get(key, 0) + 1
             usage = {key: sum(int(value.get(key, 0)) for value in batches.values())
                      for key in ['input_tokens', 'cached_input_tokens', 'output_tokens']} if batches else None
             write_json(out / 'extraction_summary.json', {
@@ -77,6 +82,7 @@ def main():
                 'feature_file_sha256': digest(args.features.read_text()),
                 'value_counts': {feature: {str(key): int(value) for key, value in features[feature].value_counts().items()} for feature in FEATURES},
                 'batch_count': len(batches) if batches else None, 'batch_usage_total': usage,
+                'automated_corrections': correction_counts,
                 'human_agreement_computed': False,
                 'interpretation': 'Output IDs, provenance, values, and quotation occurrence were validated locally. This does not measure semantic extraction accuracy, human agreement, repeatability, or absence of memorized outcomes.'})
         if args.human_labels:

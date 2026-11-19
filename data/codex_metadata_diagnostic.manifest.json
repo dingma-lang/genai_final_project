@@ -1,0 +1,30 @@
+{
+  "model": "gpt-6.1-sol",
+  "prompt_sha256": "38427f913306333cc8a0d4e2a7cfadad4a41d144fc4c87cbdd8c7f948f97dbe8",
+  "api_version": "codex-cli 0.169.0-alpha.11.1",
+  "settings_sha256": "50a8f385a45f7faf9ef9a4a880e41d4bb1b8e7bed3074a09327e7a0d36f5d2be",
+  "settings": {
+    "provider": "codex_cli",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "mode": "metadata_only",
+    "batch_size": 100,
+    "temperature": null,
+    "overrides": {
+      "web_search": "disabled",
+      "features.shell_tool": false,
+      "features.shell_snapshot": false,
+      "features.apply_patch_freeform": false,
+      "features.view_image": false,
+      "features.multi_agent": false,
+      "apps._default.enabled": false,
+      "mcp_servers": {}
+    },
+    "ignore_user_config": true,
+    "ephemeral": true,
+    "sandbox": "read-only"
+  },
+  "prompt": "This is a historical-knowledge diagnostic, separate from feature extraction. Each input gives only a home team, away team, and historical match date. For each MatchID, predict the historical outcome using your existing knowledge or best estimate. Use no tools, files, search, or external retrieval. Return exactly {\"records\":[{\"i\":123,\"r\":\"H\"}]}, with one record per input ID. H means home win, D draw, A away win. Do not add explanations or extra fields.",
+  "test_n": 279,
+  "interpretation": "Team identity can encode real strength; accuracy cannot prove memorization or its absence."
+}

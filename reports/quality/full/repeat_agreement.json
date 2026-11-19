@@ -1,0 +1,85 @@
+{
+  "n_previews": 25,
+  "feature_results": [
+    {
+      "feature": "home_sentiment",
+      "n": 25,
+      "exact_agreement": 0.92,
+      "cohen_kappa": 0.8931623931623932,
+      "left_unknown_share": 0.2,
+      "right_unknown_share": 0.16
+    },
+    {
+      "feature": "home_form",
+      "n": 25,
+      "exact_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "left_unknown_share": 0.48,
+      "right_unknown_share": 0.48
+    },
+    {
+      "feature": "home_availability",
+      "n": 25,
+      "exact_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "left_unknown_share": 0.8,
+      "right_unknown_share": 0.8
+    },
+    {
+      "feature": "home_motivation",
+      "n": 25,
+      "exact_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "left_unknown_share": 0.36,
+      "right_unknown_share": 0.36
+    },
+    {
+      "feature": "home_managerial_uncertainty",
+      "n": 25,
+      "exact_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "left_unknown_share": 0.84,
+      "right_unknown_share": 0.84
+    },
+    {
+      "feature": "away_sentiment",
+      "n": 25,
+      "exact_agreement": 0.88,
+      "cohen_kappa": 0.8303167420814479,
+      "left_unknown_share": 0.44,
+      "right_unknown_share": 0.4
+    },
+    {
+      "feature": "away_form",
+      "n": 25,
+      "exact_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "left_unknown_share": 0.6,
+      "right_unknown_share": 0.6
+    },
+    {
+      "feature": "away_availability",
+      "n": 25,
+      "exact_agreement": 1.0,
+      "cohen_kappa": null,
+      "left_unknown_share": 1.0,
+      "right_unknown_share": 1.0
+    },
+    {
+      "feature": "away_motivation",
+      "n": 25,
+      "exact_agreement": 0.92,
+      "cohen_kappa": 0.8730964467005076,
+      "left_unknown_share": 0.44,
+      "right_unknown_share": 0.44
+    },
+    {
+      "feature": "away_managerial_uncertainty",
+      "n": 25,
+      "exact_agreement": 1.0,
+      "cohen_kappa": 1.0,
+      "left_unknown_share": 0.92,
+      "right_unknown_share": 0.92
+    }
+  ]
+}

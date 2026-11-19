@@ -9,7 +9,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from common import ALLOWED, FEATURES, digest, load_records
-from extract_codex import output_schema, parse_events, resume_ids, validate_batch
+from extract_codex import output_schema, parse_events, resume_ids, validate_batch, expand_compact, select_repeat_batch, validate_metadata_batch
 import quality
 
 
@@ -18,6 +18,54 @@ def fixture_labels():
 
 
 class CodexExtractionTests(unittest.TestCase):
+    def test_repeat_preserves_training_batch_context_and_order(self):
+        rows = [{'batch_id': 'train1', 'batch_MatchIDs': [2, 1]},
+                {'batch_id': 'train2', 'batch_MatchIDs': [4, 3]},
+                {'batch_id': 'test', 'batch_MatchIDs': [6, 5]}]
+        chosen = select_repeat_batch(rows, {1, 2, 3, 4}, 2)
+        self.assertIn(chosen, [[2, 1], [4, 3]])
+        self.assertEqual(chosen, select_repeat_batch(rows, {1, 2, 3, 4}, 2))
+        with self.assertRaises(ValueError):
+            select_repeat_batch(rows, {1}, 2)
+
+    def test_metadata_predictions_require_exact_ids_and_three_outcomes(self):
+        batch = [{'MatchID': 1}, {'MatchID': 2}]
+        records = {'records': [{'i': 1, 'r': 'H'}, {'i': 2, 'r': 'D'}]}
+        self.assertEqual(validate_metadata_batch(records, batch), {1: 'H', 2: 'D'})
+        with self.assertRaises(ValueError):
+            validate_metadata_batch({'records': [{'i': 1, 'r': 'H'}]}, batch)
+        with self.assertRaises(ValueError):
+            validate_metadata_batch({'records': [{'i': 1, 'r': 'H'}, {'i': 2, 'r': 'X'}]}, batch)
+
+    def test_compact_expansion_preserves_order_and_numeric_sentiment(self):
+        batch = [{'MatchID': 3, 'text': '[HOME] have lost three games.'}]
+        values = ['-1', 'poor'] + ['unknown'] * 8
+        quotes = ['lost three games', 'lost three games'] + [''] * 8
+        expanded, corrections = expand_compact({'records': [{'i': 3, 'v': values, 'q': quotes}]}, batch)
+        labels = validate_batch(expanded, batch)[3]
+        self.assertEqual(labels['home']['sentiment']['value'], -1)
+        self.assertEqual(labels['home']['form']['value'], 'poor')
+        self.assertEqual(labels['away']['sentiment']['value'], 'unknown')
+        self.assertEqual(corrections[3], [])
+
+    def test_unsupported_compact_evidence_is_unknown_with_audit(self):
+        batch = [{'MatchID': 3, 'text': 'Some text.'}]
+        wire = {'records': [{'i': 3, 'v': ['1'] + ['unknown'] * 9, 'q': ['invented quote'] + [''] * 9}]}
+        expanded, _ = expand_compact(wire, batch)
+        with self.assertRaises(ValueError):
+            validate_batch(expanded, batch)
+        expanded, corrections = expand_compact(wire, batch, 'unknown')
+        self.assertEqual(validate_batch(expanded, batch)[3]['home']['sentiment']['value'], 'unknown')
+        self.assertEqual(corrections[3][0]['original_value'], 1)
+        self.assertEqual(corrections[3][0]['original_evidence'], 'invented quote')
+
+    def test_compact_wrong_category_and_length_are_rejected(self):
+        batch = [{'MatchID': 3, 'text': 'Some text.'}]
+        with self.assertRaises(ValueError):
+            expand_compact({'records': [{'i': 3, 'v': ['poor'] + ['unknown'] * 9, 'q': [''] * 10}]}, batch, 'unknown')
+        with self.assertRaises(ValueError):
+            expand_compact({'records': [{'i': 3, 'v': ['unknown'], 'q': ['']}]}, batch)
+
     def test_exact_batch_coverage_and_quote_provenance(self):
         batch = [{'MatchID': 1, 'text': '[HOME] have lost three games.', 'input_sha256': digest('text')}]
         labels = fixture_labels()
