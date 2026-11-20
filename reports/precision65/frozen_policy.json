@@ -1,0 +1,95 @@
+{
+  "forecast_time": "Football features use calendar dates strictly earlier than the target fixture.",
+  "market_benchmark_timing": "Archived pre-match Bet365 quotes have no per-fixture quote timestamp here.",
+  "target": 0.65,
+  "development_precision_floor": 0.69,
+  "min_development_coverage": 0.15,
+  "development_matches": 3847,
+  "validation_matches": 2797,
+  "development_through": "2324",
+  "validation_seasons": [
+    "1617",
+    "1718",
+    "1819",
+    "1920",
+    "2021",
+    "2122",
+    "2223",
+    "2324"
+  ],
+  "holdout_seasons": [
+    "2425",
+    "2526"
+  ],
+  "features": [
+    "HomeLast3Pts",
+    "HomeLast3GD",
+    "AwayLast3Pts",
+    "AwayLast3GD",
+    "elo_gap",
+    "absolute_elo_gap",
+    "home_points_per_game",
+    "home_goals_for",
+    "home_goals_against",
+    "away_points_per_game",
+    "away_goals_for",
+    "away_goals_against",
+    "home_venue_goals_for",
+    "home_venue_goals_against",
+    "away_venue_goals_for",
+    "away_venue_goals_against",
+    "home_rest_days",
+    "home_matches_in_14_days",
+    "away_rest_days",
+    "away_matches_in_14_days",
+    "home_shots_for",
+    "home_shots_against",
+    "home_on_target_for",
+    "home_on_target_against",
+    "away_shots_for",
+    "away_shots_against",
+    "away_on_target_for",
+    "away_on_target_against"
+  ],
+  "catboost_version": "1.2.10",
+  "model_settings": {
+    "elo_logistic": {
+      "parameters": {
+        "C": 0.01
+      },
+      "selection_log_loss": 0.965239866098628
+    },
+    "catboost": {
+      "parameters": {
+        "depth": 3,
+        "iterations": 200
+      },
+      "selection_log_loss": 0.9637318984844484
+    }
+  },
+  "cutoffs": {
+    "market_benchmark": {
+      "cutoff": 0.52,
+      "calls": 1414,
+      "precision": 0.6902404526166902,
+      "coverage": 0.5055416517697533,
+      "eligible": true
+    },
+    "elo_logistic": {
+      "cutoff": 0.57,
+      "calls": 1103,
+      "precision": 0.6917497733454215,
+      "coverage": 0.3943510904540579,
+      "eligible": true
+    },
+    "catboost": {
+      "cutoff": 0.58,
+      "calls": 1007,
+      "precision": 0.6931479642502483,
+      "coverage": 0.36002860207365034,
+      "eligible": true
+    }
+  },
+  "trained_model_selected_by_development_coverage": "elo_logistic",
+  "policy_order": "Choose model settings by expanding validation log loss, then maximize validation coverage among cutoffs meeting the floor. Choose the trained model by validation coverage."
+}

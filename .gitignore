@@ -7,5 +7,13 @@ data/*.jsonl
 __pycache__/
 .mplconfig/
 *.joblib
+models/keeper_form/
+models/precision65/
+/reports/precision/test_predictions.csv
+/reports/keeper_form/predictions_and_team_status.csv
+/reports/keeper_form/team_form_timeline.csv
+/reports/draw_lineup/*/test_predictions.csv
+/reports/precision65/**/predictions.csv
+/reports/precision65/predictions.csv
 *.zip
 .env

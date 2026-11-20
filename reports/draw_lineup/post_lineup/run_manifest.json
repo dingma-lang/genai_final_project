@@ -1,0 +1,239 @@
+{
+  "holdout_season": "2122",
+  "development_n": 2716,
+  "holdout_n": 350,
+  "holdout_draws": 80,
+  "selected_by_development_log_loss": "same_fixtures_numeric",
+  "models": {
+    "same_fixtures_numeric": {
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "elo_gap",
+        "absolute_elo_gap",
+        "home_points_per_game",
+        "home_goals_for",
+        "home_goals_against",
+        "away_points_per_game",
+        "away_goals_for",
+        "away_goals_against",
+        "home_venue_goals_for",
+        "home_venue_goals_against",
+        "away_venue_goals_for",
+        "away_venue_goals_against",
+        "home_rest_days",
+        "home_matches_in_14_days",
+        "away_rest_days",
+        "away_matches_in_14_days",
+        "home_shots_for",
+        "home_shots_against",
+        "home_on_target_for",
+        "home_on_target_against",
+        "away_shots_for",
+        "away_shots_against",
+        "away_on_target_for",
+        "away_on_target_against"
+      ],
+      "params": {
+        "C": 0.01
+      },
+      "validation_log_loss": 0.9783707855390712
+    },
+    "plus_keeper_continuity": {
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "elo_gap",
+        "absolute_elo_gap",
+        "home_points_per_game",
+        "home_goals_for",
+        "home_goals_against",
+        "away_points_per_game",
+        "away_goals_for",
+        "away_goals_against",
+        "home_venue_goals_for",
+        "home_venue_goals_against",
+        "away_venue_goals_for",
+        "away_venue_goals_against",
+        "home_rest_days",
+        "home_matches_in_14_days",
+        "away_rest_days",
+        "away_matches_in_14_days",
+        "home_shots_for",
+        "home_shots_against",
+        "home_on_target_for",
+        "home_on_target_against",
+        "away_shots_for",
+        "away_shots_against",
+        "away_on_target_for",
+        "away_on_target_against",
+        "home_keeper_changed",
+        "home_keeper_recent_share",
+        "away_keeper_changed",
+        "away_keeper_recent_share"
+      ],
+      "params": {
+        "C": 0.01
+      },
+      "validation_log_loss": 0.9802934436485611
+    },
+    "plus_outfield_continuity": {
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "elo_gap",
+        "absolute_elo_gap",
+        "home_points_per_game",
+        "home_goals_for",
+        "home_goals_against",
+        "away_points_per_game",
+        "away_goals_for",
+        "away_goals_against",
+        "home_venue_goals_for",
+        "home_venue_goals_against",
+        "away_venue_goals_for",
+        "away_venue_goals_against",
+        "home_rest_days",
+        "home_matches_in_14_days",
+        "away_rest_days",
+        "away_matches_in_14_days",
+        "home_shots_for",
+        "home_shots_against",
+        "home_on_target_for",
+        "home_on_target_against",
+        "away_shots_for",
+        "away_shots_against",
+        "away_on_target_for",
+        "away_on_target_against",
+        "home_outfield_changes",
+        "home_regular_outfield_missing",
+        "home_center_back_change_share",
+        "home_center_back_comparable",
+        "away_outfield_changes",
+        "away_regular_outfield_missing",
+        "away_center_back_change_share",
+        "away_center_back_comparable"
+      ],
+      "params": {
+        "C": 0.01
+      },
+      "validation_log_loss": 0.9786638202483305
+    },
+    "plus_full_lineup": {
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "elo_gap",
+        "absolute_elo_gap",
+        "home_points_per_game",
+        "home_goals_for",
+        "home_goals_against",
+        "away_points_per_game",
+        "away_goals_for",
+        "away_goals_against",
+        "home_venue_goals_for",
+        "home_venue_goals_against",
+        "away_venue_goals_for",
+        "away_venue_goals_against",
+        "home_rest_days",
+        "home_matches_in_14_days",
+        "away_rest_days",
+        "away_matches_in_14_days",
+        "home_shots_for",
+        "home_shots_against",
+        "home_on_target_for",
+        "home_on_target_against",
+        "away_shots_for",
+        "away_shots_against",
+        "away_on_target_for",
+        "away_on_target_against",
+        "home_keeper_changed",
+        "home_keeper_recent_share",
+        "away_keeper_changed",
+        "away_keeper_recent_share",
+        "home_outfield_changes",
+        "home_regular_outfield_missing",
+        "home_center_back_change_share",
+        "home_center_back_comparable",
+        "away_outfield_changes",
+        "away_regular_outfield_missing",
+        "away_center_back_change_share",
+        "away_center_back_comparable"
+      ],
+      "params": {
+        "C": 0.01
+      },
+      "validation_log_loss": 0.9804255800191795
+    }
+  },
+  "draw_rules_selected_in_development": {},
+  "versus_reference": {
+    "plus_keeper_continuity": {
+      "contrast": "combined minus baseline; negative log-loss difference favors combined",
+      "log_loss_difference": -0.0002544927201209639,
+      "log_loss_difference_95pct_interval": [
+        -0.003228697876198359,
+        0.0025062096770958656
+      ],
+      "accuracy_difference": -0.002857142857142857,
+      "accuracy_difference_95pct_interval": [
+        -0.009036144578313253,
+        0.0
+      ],
+      "bootstrap_repetitions": 2000,
+      "calendar_week_blocks": 33,
+      "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+    },
+    "plus_outfield_continuity": {
+      "contrast": "combined minus baseline; negative log-loss difference favors combined",
+      "log_loss_difference": 0.004053063240452065,
+      "log_loss_difference_95pct_interval": [
+        -0.0032954274887132835,
+        0.01149848623795611
+      ],
+      "accuracy_difference": -0.011428571428571429,
+      "accuracy_difference_95pct_interval": [
+        -0.029129052404473967,
+        0.008428756724066578
+      ],
+      "bootstrap_repetitions": 2000,
+      "calendar_week_blocks": 33,
+      "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+    },
+    "plus_full_lineup": {
+      "contrast": "combined minus baseline; negative log-loss difference favors combined",
+      "log_loss_difference": 0.004160448795265592,
+      "log_loss_difference_95pct_interval": [
+        -0.0037105698498196525,
+        0.0122752858378086
+      ],
+      "accuracy_difference": -0.014285714285714285,
+      "accuracy_difference_95pct_interval": [
+        -0.03418803418803419,
+        0.005619171149377719
+      ],
+      "bootstrap_repetitions": 2000,
+      "calendar_week_blocks": 33,
+      "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+    }
+  },
+  "validation_seasons": [
+    "1415",
+    "1516",
+    "1617",
+    "1718",
+    "1819",
+    "1920",
+    "2021"
+  ],
+  "numerical_reference_selected_in_day_ahead_validation": "existing_elo",
+  "forecast_time": "After both starting XIs are public and before kickoff."
+}

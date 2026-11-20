@@ -1,0 +1,216 @@
+{
+  "seasons": [
+    "1314",
+    "1415",
+    "1516",
+    "1617",
+    "1718",
+    "1819",
+    "1920"
+  ],
+  "development_matches": 2076,
+  "holdout_matches": 346,
+  "holdout_season": "1920",
+  "selected_by_development_log_loss": "static",
+  "selection": {
+    "static": {
+      "params": {
+        "C": 0.01
+      },
+      "cv_log_loss": 0.9655009464933629,
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "elo_gap",
+        "absolute_elo_gap",
+        "home_points_per_game",
+        "home_goals_for",
+        "home_goals_against",
+        "away_points_per_game",
+        "away_goals_for",
+        "away_goals_against",
+        "home_venue_goals_for",
+        "home_venue_goals_against",
+        "away_venue_goals_for",
+        "away_venue_goals_against",
+        "home_rest_days",
+        "home_matches_in_14_days",
+        "away_rest_days",
+        "away_matches_in_14_days",
+        "home_shots_for",
+        "home_shots_against",
+        "home_on_target_for",
+        "home_on_target_against",
+        "away_shots_for",
+        "away_shots_against",
+        "away_on_target_for",
+        "away_on_target_against"
+      ]
+    },
+    "gru": {
+      "epochs": 10,
+      "cv_log_loss": 0.96579613914569,
+      "development_by_epoch": {
+        "10": 0.96579613914569,
+        "25": 0.9715934802949605,
+        "40": 1.0127812594639234
+      },
+      "static_model": "static"
+    },
+    "static_plus_keeper": {
+      "params": {
+        "C": 0.01
+      },
+      "cv_log_loss": 0.9686990250557298,
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "elo_gap",
+        "absolute_elo_gap",
+        "home_points_per_game",
+        "home_goals_for",
+        "home_goals_against",
+        "away_points_per_game",
+        "away_goals_for",
+        "away_goals_against",
+        "home_venue_goals_for",
+        "home_venue_goals_against",
+        "away_venue_goals_for",
+        "away_venue_goals_against",
+        "home_rest_days",
+        "home_matches_in_14_days",
+        "away_rest_days",
+        "away_matches_in_14_days",
+        "home_shots_for",
+        "home_shots_against",
+        "home_on_target_for",
+        "home_on_target_against",
+        "away_shots_for",
+        "away_shots_against",
+        "away_on_target_for",
+        "away_on_target_against",
+        "home_keeper_recent_club_start_share",
+        "home_keeper_changed_since_last_game",
+        "home_keeper_known_club_starts",
+        "home_keeper_prior_full_matches",
+        "home_keeper_prior_save_proxy",
+        "away_keeper_recent_club_start_share",
+        "away_keeper_changed_since_last_game",
+        "away_keeper_known_club_starts",
+        "away_keeper_prior_full_matches",
+        "away_keeper_prior_save_proxy"
+      ]
+    },
+    "gru_plus_keeper": {
+      "epochs": 10,
+      "cv_log_loss": 0.968991305546979,
+      "development_by_epoch": {
+        "10": 0.968991305546979,
+        "25": 0.9746419009267357,
+        "40": 1.0137413434532263
+      },
+      "static_model": "static_plus_keeper"
+    }
+  },
+  "paired_holdout_comparisons": {
+    "keeper_vs_static": {
+      "contrast": "combined minus baseline; negative log-loss difference favors combined",
+      "log_loss_difference": 0.004349586901330672,
+      "log_loss_difference_95pct_interval": [
+        -0.002479690568365584,
+        0.011347337539005957
+      ],
+      "accuracy_difference": -0.014450867052023121,
+      "accuracy_difference_95pct_interval": [
+        -0.04025304676175307,
+        0.006370962786982604
+      ],
+      "bootstrap_repetitions": 2000,
+      "calendar_week_blocks": 32,
+      "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+    },
+    "gru_vs_static": {
+      "contrast": "combined minus baseline; negative log-loss difference favors combined",
+      "log_loss_difference": 0.0016380910026515994,
+      "log_loss_difference_95pct_interval": [
+        -0.0026695252604455218,
+        0.006127224261228181
+      ],
+      "accuracy_difference": -0.005780346820809248,
+      "accuracy_difference_95pct_interval": [
+        -0.014793447293447292,
+        0.0
+      ],
+      "bootstrap_repetitions": 2000,
+      "calendar_week_blocks": 32,
+      "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+    },
+    "gru_keeper_vs_static": {
+      "contrast": "combined minus baseline; negative log-loss difference favors combined",
+      "log_loss_difference": 0.0060160328437166705,
+      "log_loss_difference_95pct_interval": [
+        -0.0027580370905960715,
+        0.01530261595181579
+      ],
+      "accuracy_difference": -0.017341040462427744,
+      "accuracy_difference_95pct_interval": [
+        -0.042682926829268296,
+        0.002702702702702703
+      ],
+      "bootstrap_repetitions": 2000,
+      "calendar_week_blocks": 32,
+      "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+    },
+    "keeper_with_gru": {
+      "contrast": "combined minus baseline; negative log-loss difference favors combined",
+      "log_loss_difference": 0.00437794184106507,
+      "log_loss_difference_95pct_interval": [
+        -0.0024454208479330634,
+        0.011366780678004697
+      ],
+      "accuracy_difference": -0.011560693641618497,
+      "accuracy_difference_95pct_interval": [
+        -0.03611467774420946,
+        0.00869820221853881
+      ],
+      "bootstrap_repetitions": 2000,
+      "calendar_week_blocks": 32,
+      "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+    }
+  },
+  "sequence_length": 8,
+  "sequence_features": [
+    "points_per_game",
+    "goals_for",
+    "goals_against",
+    "shots_for",
+    "shots_against",
+    "on_target_for",
+    "on_target_against",
+    "at_home",
+    "opposition_adjusted_score"
+  ],
+  "form_status": {
+    "strong_at_or_above": 0.05,
+    "weak_at_or_below": -0.05,
+    "meaning": "Temporary expected change in result score relative to pre-match Elo expectation."
+  },
+  "form_training_target": "Next-game score (win 1, draw .5, loss 0) minus the pre-match Elo expectation, by team.",
+  "fit": {
+    "seed": 244,
+    "device": "cpu",
+    "torch": "2.14.0",
+    "hidden_units": 8,
+    "maximum_epochs": [
+      10,
+      25,
+      40
+    ],
+    "auxiliary_weight": 0.75
+  },
+  "forecast_time": "After starting lineups were public. Current keeper identity is the only target-match lineup fact used."
+}

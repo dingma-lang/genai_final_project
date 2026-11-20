@@ -1,0 +1,171 @@
+{
+  "train_n": 1750,
+  "holdout_n": 350,
+  "season_counts": {
+    "1314": 350,
+    "1415": 350,
+    "1516": 350,
+    "1617": 350,
+    "1718": 350,
+    "1819": 350
+  },
+  "selected_by_forward_log_loss": "all_signals",
+  "models": {
+    "baseline": {
+      "params": {
+        "C": 0.1
+      },
+      "cv_log_loss": 1.0279450063945696,
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD"
+      ]
+    },
+    "elo_strength": {
+      "params": {
+        "C": 0.01
+      },
+      "cv_log_loss": 0.9851575881699258,
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "elo_gap",
+        "absolute_elo_gap"
+      ]
+    },
+    "longer_form": {
+      "params": {
+        "C": 0.01
+      },
+      "cv_log_loss": 1.0085371952220787,
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "home_points_per_game",
+        "home_goals_for",
+        "home_goals_against",
+        "away_points_per_game",
+        "away_goals_for",
+        "away_goals_against"
+      ]
+    },
+    "venue_form": {
+      "params": {
+        "C": 0.01
+      },
+      "cv_log_loss": 1.0140521244642224,
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "home_venue_goals_for",
+        "home_venue_goals_against",
+        "away_venue_goals_for",
+        "away_venue_goals_against"
+      ]
+    },
+    "rest": {
+      "params": {
+        "C": 0.01
+      },
+      "cv_log_loss": 1.0292982529980423,
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "home_rest_days",
+        "home_matches_in_14_days",
+        "away_rest_days",
+        "away_matches_in_14_days"
+      ]
+    },
+    "shot_profile": {
+      "params": {
+        "C": 0.01
+      },
+      "cv_log_loss": 0.9894948038347562,
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "home_shots_for",
+        "home_shots_against",
+        "home_on_target_for",
+        "home_on_target_against",
+        "away_shots_for",
+        "away_shots_against",
+        "away_on_target_for",
+        "away_on_target_against"
+      ]
+    },
+    "all_signals": {
+      "params": {
+        "C": 0.01
+      },
+      "cv_log_loss": 0.9780757831296791,
+      "columns": [
+        "HomeLast3Pts",
+        "HomeLast3GD",
+        "AwayLast3Pts",
+        "AwayLast3GD",
+        "elo_gap",
+        "absolute_elo_gap",
+        "home_points_per_game",
+        "home_goals_for",
+        "home_goals_against",
+        "away_points_per_game",
+        "away_goals_for",
+        "away_goals_against",
+        "home_venue_goals_for",
+        "home_venue_goals_against",
+        "away_venue_goals_for",
+        "away_venue_goals_against",
+        "home_rest_days",
+        "home_matches_in_14_days",
+        "away_rest_days",
+        "away_matches_in_14_days",
+        "home_shots_for",
+        "home_shots_against",
+        "home_on_target_for",
+        "home_on_target_against",
+        "away_shots_for",
+        "away_shots_against",
+        "away_on_target_for",
+        "away_on_target_against"
+      ]
+    }
+  },
+  "confidence_cutoffs": {
+    "baseline": 0.48203683077796156,
+    "all_signals": 0.5272853602655372
+  },
+  "confidence_policy": "Median winning probability in the forward validation folds, fixed before holdout scoring",
+  "holdout_season": "1819",
+  "selected_minus_baseline": {
+    "contrast": "combined minus baseline; negative log-loss difference favors combined",
+    "log_loss_difference": -0.08572310261494179,
+    "log_loss_difference_95pct_interval": [
+      -0.11231162581717194,
+      -0.05925875566782423
+    ],
+    "accuracy_difference": 0.04285714285714286,
+    "accuracy_difference_95pct_interval": [
+      0.0055248618784530384,
+      0.08011308240021271
+    ],
+    "bootstrap_repetitions": 2000,
+    "calendar_week_blocks": 32,
+    "limitation": "Exploratory calendar-week block bootstrap on one season; does not capture all team/serial dependence."
+  },
+  "market_probabilities": "Normalize reciprocal decimal Bet365 odds. Market benchmark only.",
+  "feature_timing": "Features and Elo use earlier calendar dates only. Rolling team stats reset each season."
+}

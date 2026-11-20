@@ -29,6 +29,10 @@ The final-season outcomes have now been inspected for this fixed design. Do not 
 
 ## Files to open
 
+- [CatBoost and the 65% accuracy target](reports/precision65/findings.md)
+- [Draw prediction and lineup continuity study](reports/draw_lineup/findings.md)
+- [Starting goalkeeper and recurrent team-form experiment](reports/keeper_form/findings.md)
+- [Follow-up study on prediction precision using pre-match statistics](reports/precision/findings.md)
 - [Full results and hypothesis comparisons](reports/full/results.md)
 - [Test metrics](reports/full/metrics.csv) and [per-match predictions](reports/full/test_predictions.csv)
 - [Derived feature values](data/llm_feature_values.csv) and [provenance](data/llm_feature_values.manifest.json)

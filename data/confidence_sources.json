@@ -1,0 +1,22 @@
+[
+  {
+    "path": "data/raw/raw_results/E0_2223.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/2223/E0.csv",
+    "sha256": "8442792d3b614c94ea3cf381bd2736805889cc1713169035368fff19c3d02380"
+  },
+  {
+    "path": "data/raw/raw_results/E0_2324.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/2324/E0.csv",
+    "sha256": "b2e057b0ed959f198b0f63d2391c01239f3608e6de5db68edab3f88e04d07ff3"
+  },
+  {
+    "path": "data/raw/raw_results/E0_2425.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+    "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+  },
+  {
+    "path": "data/raw/raw_results/E0_2526.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
+    "sha256": "3e3a8352f9ada6789c508d6ca184424421fed56a30400904a4a327c583407e62"
+  }
+]

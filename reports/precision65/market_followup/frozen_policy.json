@@ -1,0 +1,85 @@
+{
+  "forecast_time": "After the archived closing quote and before kickoff.",
+  "odds_columns_in_A_D_H_order": [
+    "AvgCA",
+    "AvgCD",
+    "AvgCH"
+  ],
+  "development_ends": "2526",
+  "development_matches": 2447,
+  "validation_seasons": [
+    "2122",
+    "2223",
+    "2324",
+    "2425",
+    "2526"
+  ],
+  "validation_matches": 1749,
+  "selection_log_loss": 0.9721237671513382,
+  "selected_C": 0.01,
+  "model_features": [
+    "HomeLast3Pts",
+    "HomeLast3GD",
+    "AwayLast3Pts",
+    "AwayLast3GD",
+    "elo_gap",
+    "absolute_elo_gap",
+    "home_points_per_game",
+    "home_goals_for",
+    "home_goals_against",
+    "away_points_per_game",
+    "away_goals_for",
+    "away_goals_against",
+    "home_venue_goals_for",
+    "home_venue_goals_against",
+    "away_venue_goals_for",
+    "away_venue_goals_against",
+    "home_rest_days",
+    "home_matches_in_14_days",
+    "away_rest_days",
+    "away_matches_in_14_days",
+    "home_shots_for",
+    "home_shots_against",
+    "home_on_target_for",
+    "home_on_target_against",
+    "away_shots_for",
+    "away_shots_against",
+    "away_on_target_for",
+    "away_on_target_against",
+    "close_log_away_vs_draw",
+    "close_log_home_vs_draw"
+  ],
+  "requirements": {
+    "pooled_validation_precision": 0.72,
+    "pooled_validation_coverage": 0.12,
+    "each_recent_season_precision": 0.65,
+    "each_recent_season_coverage": 0.1,
+    "recent_seasons": [
+      "2425",
+      "2526"
+    ]
+  },
+  "policy": {
+    "football_plus_closing_odds": {
+      "cutoff": 0.625,
+      "precision": 0.72,
+      "coverage": 0.24299599771297883,
+      "2425_coverage": 0.27714285714285714,
+      "2425_precision": 0.6907216494845361,
+      "2526_coverage": 0.1657142857142857,
+      "2526_precision": 0.6724137931034483,
+      "eligible": true
+    },
+    "closing_market": {
+      "cutoff": 0.645,
+      "precision": 0.7391304347826086,
+      "coverage": 0.22355631789594055,
+      "2425_coverage": 0.24571428571428572,
+      "2425_precision": 0.7209302325581395,
+      "2526_coverage": 0.16,
+      "2526_precision": 0.6607142857142857,
+      "eligible": true
+    }
+  },
+  "snapshot_date": "2026-11-19"
+}

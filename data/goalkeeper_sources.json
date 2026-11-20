@@ -1,0 +1,17 @@
+[
+  {
+    "path": "data/raw/raw_results/E0_1920.csv",
+    "url": "https://www.football-data.co.uk/mmz4281/1920/E0.csv",
+    "sha256": "100037618b94f94057400bb02bf6bac4ef74ddaa58cde4b38370839c39caee61"
+  },
+  {
+    "path": "data/raw/goalkeepers/opta_lineups.parquet",
+    "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_lineups.parquet",
+    "sha256": "c8561520fe3a305d2c9cd75ca9dd108837c06feec94e7f3b737453146b551512"
+  },
+  {
+    "path": "data/raw/goalkeepers/opta_fixtures.parquet",
+    "url": "https://github.com/peteowen1/pannadata/releases/download/opta-latest/opta_fixtures.parquet",
+    "sha256": "7cff50c3a168fff46193b5de370501c56af463d3ce6d25188ac5f532ba540d68"
+  }
+]
