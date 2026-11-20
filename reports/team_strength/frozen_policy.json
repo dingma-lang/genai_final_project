@@ -1,0 +1,33 @@
+{
+  "settings": {
+    "alpha": 0.001,
+    "half_life": 365,
+    "rho": 0.0
+  },
+  "validation_log_loss": 0.9728373535800361,
+  "policy": {
+    "cutoff": 0.645,
+    "precision": 0.7506631299734748,
+    "coverage": 0.21579851173440184,
+    "calls": 377,
+    "2223_precision": 0.7027027027027027,
+    "2223_coverage": 0.21142857142857144,
+    "2324_precision": 0.7682926829268293,
+    "2324_coverage": 0.2349570200573066,
+    "eligible": true
+  },
+  "validation_seasons": [
+    "1920",
+    "2021",
+    "2122",
+    "2223",
+    "2324"
+  ],
+  "test_seasons": [
+    "2425",
+    "2526"
+  ],
+  "updates": "Refit on the first calendar day of each month using strictly earlier completed games; exponential time weights.",
+  "inputs": "Attack team identity, opponent defence identity, and home indicator. Earlier scores are training targets.",
+  "evaluation_status": "Retrospective follow-up after earlier project results; independent prospective evaluation remains outstanding."
+}

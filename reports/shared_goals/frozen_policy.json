@@ -1,0 +1,217 @@
+{
+  "selected_by_validation_log_loss": "linear_goals_and_xg",
+  "models": {
+    "linear_goals": {
+      "family": "linear",
+      "target": "goals",
+      "config": {
+        "alpha": 0.1
+      },
+      "validation_log_loss": 0.9732226722854639,
+      "conservative_policy": {
+        "cutoff": 0.65,
+        "precision": 0.7566765578635015,
+        "coverage": 0.19290211791642817,
+        "calls": 337,
+        "2223_precision": 0.7536231884057971,
+        "2223_coverage": 0.19714285714285715,
+        "2324_precision": 0.7948717948717948,
+        "2324_coverage": 0.22349570200573066,
+        "eligible": true
+      },
+      "broader_policy": {
+        "cutoff": 0.595,
+        "calls": 515,
+        "correct": 359,
+        "precision": 0.6970873786407767,
+        "coverage": 0.294791070406411,
+        "wilson_lower": 0.6560615721188028,
+        "wilson_upper": 0.7351947481864614,
+        "2223_precision": 0.6666666666666666,
+        "2223_coverage": 0.2914285714285714,
+        "2324_precision": 0.7131147540983607,
+        "2324_coverage": 0.3495702005730659,
+        "eligible": true
+      }
+    },
+    "linear_goals_and_xg": {
+      "family": "linear",
+      "target": "goals_and_xg",
+      "config": {
+        "alpha": 0.1
+      },
+      "validation_log_loss": 0.9718659485257432,
+      "conservative_policy": {
+        "cutoff": 0.635,
+        "precision": 0.7621776504297995,
+        "coverage": 0.19977103606182026,
+        "calls": 349,
+        "2223_precision": 0.7638888888888888,
+        "2223_coverage": 0.2057142857142857,
+        "2324_precision": 0.788235294117647,
+        "2324_coverage": 0.24355300859598855,
+        "eligible": true
+      },
+      "broader_policy": {
+        "cutoff": 0.5700000000000001,
+        "calls": 562,
+        "correct": 390,
+        "precision": 0.693950177935943,
+        "coverage": 0.32169433314253004,
+        "wilson_lower": 0.6546388642110627,
+        "wilson_upper": 0.7306280627729508,
+        "2223_precision": 0.6666666666666666,
+        "2223_coverage": 0.3342857142857143,
+        "2324_precision": 0.7131782945736435,
+        "2324_coverage": 0.36962750716332377,
+        "eligible": true
+      }
+    },
+    "catboost_goals": {
+      "family": "catboost",
+      "target": "goals",
+      "config": {
+        "depth": 3,
+        "iterations": 300
+      },
+      "validation_log_loss": 0.9740183956811779,
+      "conservative_policy": {
+        "cutoff": 0.69,
+        "precision": 0.751004016064257,
+        "coverage": 0.14253005151688608,
+        "calls": 249,
+        "2223_precision": 0.7547169811320755,
+        "2223_coverage": 0.15142857142857144,
+        "2324_precision": 0.8148148148148148,
+        "2324_coverage": 0.15472779369627507,
+        "eligible": true
+      },
+      "broader_policy": {
+        "cutoff": 0.585,
+        "calls": 593,
+        "correct": 415,
+        "precision": 0.6998313659359191,
+        "coverage": 0.33943903835145967,
+        "wilson_lower": 0.6617523348594877,
+        "wilson_upper": 0.7353380423208963,
+        "2223_precision": 0.688,
+        "2223_coverage": 0.35714285714285715,
+        "2324_precision": 0.6956521739130435,
+        "2324_coverage": 0.3954154727793696,
+        "eligible": true
+      }
+    },
+    "catboost_goals_and_xg": {
+      "family": "catboost",
+      "target": "goals_and_xg",
+      "config": {
+        "depth": 3,
+        "iterations": 300
+      },
+      "validation_log_loss": 0.9727459588314334,
+      "conservative_policy": {
+        "cutoff": 0.66,
+        "precision": 0.7525773195876289,
+        "coverage": 0.16657126502575845,
+        "calls": 291,
+        "2223_precision": 0.7777777777777778,
+        "2223_coverage": 0.18,
+        "2324_precision": 0.7971014492753623,
+        "2324_coverage": 0.1977077363896848,
+        "eligible": true
+      },
+      "broader_policy": {
+        "cutoff": 0.555,
+        "calls": 653,
+        "correct": 449,
+        "precision": 0.6875957120980092,
+        "coverage": 0.37378362907842017,
+        "wilson_lower": 0.6510375919319203,
+        "wilson_upper": 0.7219595700314517,
+        "2223_precision": 0.6690647482014388,
+        "2223_coverage": 0.39714285714285713,
+        "2324_precision": 0.6845637583892618,
+        "2324_coverage": 0.4269340974212034,
+        "eligible": true
+      }
+    }
+  },
+  "development_matches": 3447,
+  "training_matches": 3421,
+  "training_team_rows": 6842,
+  "test_matches": 619,
+  "validation_seasons": [
+    "1920",
+    "2021",
+    "2122",
+    "2223",
+    "2324"
+  ],
+  "test_seasons": [
+    "2425",
+    "2526"
+  ],
+  "features": [
+    "at_home",
+    "elo_gap",
+    "absolute_elo_gap",
+    "own_last3_points",
+    "own_last3_goal_difference",
+    "own_points_per_game",
+    "own_goals_for",
+    "own_goals_against",
+    "own_venue_goals_for",
+    "own_venue_goals_against",
+    "own_rest_days",
+    "own_matches_in_14_days",
+    "own_shots_for",
+    "own_shots_against",
+    "own_on_target_for",
+    "own_on_target_against",
+    "own_xg_for",
+    "own_xg_against",
+    "own_finishing",
+    "own_conceding",
+    "own_venue_xg_for",
+    "own_venue_xg_against",
+    "opponent_last3_points",
+    "opponent_last3_goal_difference",
+    "opponent_points_per_game",
+    "opponent_goals_for",
+    "opponent_goals_against",
+    "opponent_venue_goals_for",
+    "opponent_venue_goals_against",
+    "opponent_rest_days",
+    "opponent_matches_in_14_days",
+    "opponent_shots_for",
+    "opponent_shots_against",
+    "opponent_on_target_for",
+    "opponent_on_target_against",
+    "opponent_xg_for",
+    "opponent_xg_against",
+    "opponent_finishing",
+    "opponent_conceding",
+    "opponent_venue_xg_for",
+    "opponent_venue_xg_against"
+  ],
+  "training_target": "Actual goals or the fixed equal-weight mean of actual goals and archived expected goals.",
+  "timing": "Predictors contain only prior-match summaries and venue. Current-match goals and xG enter training targets only.",
+  "shared_model": "The same scoring function applies to both teams, using own and opponent features plus a home indicator.",
+  "evaluation_status": "Retrospective follow-up on previously examined seasons. Independent prospective evaluation is still required.",
+  "selected_minus_previous_goal_model": {
+    "contrast": "combined minus baseline; negative log-loss difference favors combined",
+    "log_loss_difference": 8.742351715741889e-05,
+    "log_loss_difference_95pct_interval": [
+      -0.003289939415892135,
+      0.0034072458002271052
+    ],
+    "accuracy_difference": 0.0032310177705977385,
+    "accuracy_difference_95pct_interval": [
+      -0.0036592633466685045,
+      0.010769645608628657
+    ],
+    "bootstrap_repetitions": 2000,
+    "calendar_week_blocks": 60,
+    "limitation": "Exploratory weekly interval across previously examined seasons; model search and all serial dependence are not captured."
+  }
+}

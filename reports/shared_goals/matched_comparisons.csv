@@ -1,0 +1,15 @@
+selector,model,calls,same_fixtures_correct,same_count_correct,same_count_precision
+linear_goals_and_xg,linear_goals,107,72,74,0.6915887850467289
+linear_goals_and_xg,linear_goals_and_xg,107,72,72,0.6728971962616822
+linear_goals_and_xg,catboost_goals,107,72,75,0.7009345794392523
+linear_goals_and_xg,catboost_goals_and_xg,107,72,71,0.6635514018691588
+linear_goals_and_xg,previous_separate_goal_model,107,72,74,0.6915887850467289
+linear_goals_and_xg,previous_catboost,107,72,67,0.6261682242990654
+linear_goals_and_xg,previous_market_benchmark,107,72,75,0.7009345794392523
+catboost_goals,linear_goals,62,50,46,0.7419354838709677
+catboost_goals,linear_goals_and_xg,62,50,45,0.7258064516129032
+catboost_goals,catboost_goals,62,50,50,0.8064516129032258
+catboost_goals,catboost_goals_and_xg,62,50,48,0.7741935483870968
+catboost_goals,previous_separate_goal_model,62,50,47,0.7580645161290323
+catboost_goals,previous_catboost,62,50,44,0.7096774193548387
+catboost_goals,previous_market_benchmark,62,50,46,0.7419354838709677

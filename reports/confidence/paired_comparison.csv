@@ -1,0 +1,4 @@
+model,eligible_matches,covered,correct,accuracy,coverage
+Previous goal-count,619,58,44,0.7586206896551724,0.09369951534733441
+Previous CatBoost + xG,619,81,54,0.6666666666666666,0.1308562197092084
+Monthly team strength,619,93,60,0.6451612903225806,0.15024232633279483

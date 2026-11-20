@@ -9,6 +9,15 @@ __pycache__/
 *.joblib
 models/keeper_form/
 models/precision65/
+models/xg/
+/reports/xg/predictions.csv
+/reports/goal_score/predictions.csv
+models/confidence/
+/reports/confidence/predictions.csv
+/reports/team_strength/predictions.csv
+/reports/team_strength/snapshot_predictions.csv
+models/shared_goals/
+/reports/shared_goals/predictions.csv
 /reports/precision/test_predictions.csv
 /reports/keeper_form/predictions_and_team_status.csv
 /reports/keeper_form/team_form_timeline.csv

@@ -29,6 +29,9 @@ The final-season outcomes have now been inspected for this fixed design. Do not 
 
 ## Files to open
 
+- [Shared goal-scoring models and the latest precision results](reports/shared_goals/findings.md)
+- [Further precision tests, calibration, and monthly team-strength updates](reports/confidence/findings.md)
+- [Expected goals, goal-count models, and higher-confidence predictions](reports/goal_score/findings.md)
 - [CatBoost and the 65% accuracy target](reports/precision65/findings.md)
 - [Draw prediction and lineup continuity study](reports/draw_lineup/findings.md)
 - [Starting goalkeeper and recurrent team-form experiment](reports/keeper_form/findings.md)

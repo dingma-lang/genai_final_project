@@ -1,0 +1,112 @@
+{
+  "configuration": {
+    "alpha": 0.1,
+    "half_life_days": null,
+    "rho": 0.0
+  },
+  "validation_log_loss": 0.9776873611723611,
+  "policies": {
+    "goal_score": {
+      "cutoff": 0.7,
+      "precision": 0.7580645161290323,
+      "coverage": 0.14195764167143674,
+      "calls": 248,
+      "2223_precision": 0.7446808510638298,
+      "2223_coverage": 0.13428571428571429,
+      "2324_precision": 0.7818181818181819,
+      "2324_coverage": 0.15759312320916904,
+      "eligible": true
+    },
+    "catboost_xg": {
+      "cutoff": 0.665,
+      "precision": 0.75,
+      "coverage": 0.15798511734401832,
+      "calls": 276,
+      "2223_precision": 0.7313432835820896,
+      "2223_coverage": 0.19142857142857142,
+      "2324_precision": 0.8214285714285714,
+      "2324_coverage": 0.16045845272206305,
+      "eligible": true
+    }
+  },
+  "features": [
+    "HomeLast3Pts",
+    "HomeLast3GD",
+    "AwayLast3Pts",
+    "AwayLast3GD",
+    "elo_gap",
+    "absolute_elo_gap",
+    "home_points_per_game",
+    "home_goals_for",
+    "home_goals_against",
+    "away_points_per_game",
+    "away_goals_for",
+    "away_goals_against",
+    "home_venue_goals_for",
+    "home_venue_goals_against",
+    "away_venue_goals_for",
+    "away_venue_goals_against",
+    "home_rest_days",
+    "home_matches_in_14_days",
+    "away_rest_days",
+    "away_matches_in_14_days",
+    "home_shots_for",
+    "home_shots_against",
+    "home_on_target_for",
+    "home_on_target_against",
+    "away_shots_for",
+    "away_shots_against",
+    "away_on_target_for",
+    "away_on_target_against",
+    "home_xg_for",
+    "home_xg_against",
+    "home_finishing",
+    "home_conceding",
+    "home_venue_xg_for",
+    "home_venue_xg_against",
+    "away_xg_for",
+    "away_xg_against",
+    "away_finishing",
+    "away_conceding",
+    "away_venue_xg_for",
+    "away_venue_xg_against"
+  ],
+  "validation_seasons": [
+    "1920",
+    "2021",
+    "2122",
+    "2223",
+    "2324"
+  ],
+  "test_seasons": [
+    "2425",
+    "2526"
+  ],
+  "policy_requirements": "75% validation hit rate and 10% coverage overall; 70% hit rate and 5% coverage in each of the last two validation seasons.",
+  "evaluation_status": "Exploratory second experiment after inspecting the xG follow-up. Same previously examined seasons; independent future evaluation still needed.",
+  "score_model": "Separate regularized Poisson regressions for home and away goals; optional Dixon-Coles low-score probability adjustment selected by validation log loss.",
+  "rate_bounds": [
+    0.05,
+    8.0
+  ],
+  "score_grid": [
+    0,
+    50
+  ],
+  "goal_score_minus_previous_catboost": {
+    "contrast": "combined minus baseline; negative log-loss difference favors combined",
+    "log_loss_difference": -0.014379453584978389,
+    "log_loss_difference_95pct_interval": [
+      -0.023245675663735123,
+      -0.004875803475515574
+    ],
+    "accuracy_difference": 0.008077544426494346,
+    "accuracy_difference_95pct_interval": [
+      -0.009708737864077669,
+      0.02402017519026125
+    ],
+    "bootstrap_repetitions": 2000,
+    "calendar_week_blocks": 60,
+    "limitation": "Exploratory weekly block interval across two previously examined seasons; model selection and all team dependence are not captured."
+  }
+}

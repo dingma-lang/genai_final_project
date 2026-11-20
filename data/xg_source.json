@@ -1,0 +1,8 @@
+{
+  "path": "data/raw/xg/understat_metadata.parquet",
+  "url": "https://github.com/peteowen1/pannadata/releases/download/understat-latest/understat_metadata.parquet",
+  "sha256": "edddd2a00f259ea631e9c5089939b6b35d64bef79c8ba4c4d8d8cec0534d18d3",
+  "published_sha256": "sha256:edddd2a00f259ea631e9c5089939b6b35d64bef79c8ba4c4d8d8cec0534d18d3",
+  "source": "Understat via peteowen1/pannadata",
+  "snapshot_retained_on": "2026-11-20"
+}

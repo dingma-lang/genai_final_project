@@ -1,0 +1,158 @@
+{
+  "base_forecast_seasons": [
+    "1718",
+    "1819",
+    "1920",
+    "2021",
+    "2122",
+    "2223",
+    "2324"
+  ],
+  "policy_validation_seasons": [
+    "2021",
+    "2122",
+    "2223",
+    "2324"
+  ],
+  "test_seasons": [
+    "2425",
+    "2526"
+  ],
+  "test_matches": 619,
+  "selected_by_validation_coverage": "catboost_xg",
+  "settings": {
+    "goal_history": {
+      "validation_log_loss": 0.9780432472753757,
+      "policy": {
+        "cutoff": 0.605,
+        "calls": 388,
+        "correct": 272,
+        "precision": 0.7010309278350515,
+        "coverage": 0.2777380100214746,
+        "wilson_lower": 0.653688434509845,
+        "wilson_upper": 0.7444317656075838,
+        "2223_precision": 0.673469387755102,
+        "2223_coverage": 0.28,
+        "2324_precision": 0.7641509433962265,
+        "2324_coverage": 0.3037249283667622,
+        "eligible": true
+      }
+    },
+    "goal_xg": {
+      "validation_log_loss": 0.9763816878174539,
+      "policy": {
+        "cutoff": 0.605,
+        "calls": 412,
+        "correct": 290,
+        "precision": 0.7038834951456311,
+        "coverage": 0.2949176807444524,
+        "wilson_lower": 0.6580797316698603,
+        "wilson_upper": 0.7459203900987572,
+        "2223_precision": 0.6666666666666666,
+        "2223_coverage": 0.2914285714285714,
+        "2324_precision": 0.7631578947368421,
+        "2324_coverage": 0.32664756446991405,
+        "eligible": true
+      }
+    },
+    "catboost_xg": {
+      "validation_log_loss": 0.9759352821041073,
+      "policy": {
+        "cutoff": 0.5800000000000001,
+        "calls": 474,
+        "correct": 330,
+        "precision": 0.6962025316455697,
+        "coverage": 0.33929849677881174,
+        "wilson_lower": 0.6533600606229898,
+        "wilson_upper": 0.7358903833611831,
+        "2223_precision": 0.6774193548387096,
+        "2223_coverage": 0.35428571428571426,
+        "2324_precision": 0.7049180327868853,
+        "2324_coverage": 0.3495702005730659,
+        "eligible": true
+      }
+    },
+    "blend": {
+      "validation_log_loss": 0.97423624568731,
+      "policy": {
+        "cutoff": 0.595,
+        "calls": 437,
+        "correct": 307,
+        "precision": 0.7025171624713958,
+        "coverage": 0.31281317108088763,
+        "wilson_lower": 0.658041680725957,
+        "wilson_upper": 0.7434632060274282,
+        "2223_precision": 0.6756756756756757,
+        "2223_coverage": 0.3171428571428571,
+        "2324_precision": 0.7288135593220338,
+        "2324_coverage": 0.33810888252148996,
+        "eligible": true
+      }
+    },
+    "calibrated_blend": {
+      "validation_log_loss": 0.9770924007859143,
+      "policy": {
+        "cutoff": 0.595,
+        "calls": 436,
+        "correct": 303,
+        "precision": 0.694954128440367,
+        "coverage": 0.31209735146743023,
+        "wilson_lower": 0.6501888352228535,
+        "wilson_upper": 0.7363140661994114,
+        "2223_precision": 0.6637168141592921,
+        "2223_coverage": 0.32285714285714284,
+        "2324_precision": 0.7213114754098361,
+        "2324_coverage": 0.3495702005730659,
+        "eligible": true
+      }
+    },
+    "blend_confidence_model": {
+      "validation_log_loss": 0.97423624568731,
+      "policy": {
+        "cutoff": 0.615,
+        "calls": 448,
+        "correct": 311,
+        "precision": 0.6941964285714286,
+        "coverage": 0.3206871868289191,
+        "wilson_lower": 0.650030114100661,
+        "wilson_upper": 0.7350607105751885,
+        "2223_precision": 0.6752136752136753,
+        "2223_coverage": 0.3342857142857143,
+        "2324_precision": 0.7333333333333333,
+        "2324_coverage": 0.3438395415472779,
+        "eligible": true
+      }
+    }
+  },
+  "catboost_settings": {
+    "depth": 3,
+    "iterations": 200,
+    "half_life_days": null
+  },
+  "poisson_settings": {
+    "alpha": 0.1,
+    "half_life_days": null,
+    "rho": 0
+  },
+  "calibration": "Logistic calibration C=0.1 on blended log probability ratios; fitted to earlier-season out-of-fold predictions.",
+  "confidence_model": "Standardized logistic regression C=0.1 on maximum probability, margin, draw probability, model disagreement, home call indicator and model agreement.",
+  "policy_requirements": "Pooled two-sided 95% Wilson lower bound at least 65%, at least 100 calls and 15% coverage; 65% precision and 10% coverage in each of the last two validation seasons.",
+  "selection_limitation": "Wilson bounds are descriptive after searching models and thresholds and assume independent matches.",
+  "evaluation_status": "Retrospective extension on previously examined seasons. Base settings came from earlier experiments. Independent future evaluation still required.",
+  "xg_minus_history_goal_model": {
+    "contrast": "combined minus baseline; negative log-loss difference favors combined",
+    "log_loss_difference": -0.00200338803375979,
+    "log_loss_difference_95pct_interval": [
+      -0.0061174521515104,
+      0.0022117704180088923
+    ],
+    "accuracy_difference": 0.011308562197092083,
+    "accuracy_difference_95pct_interval": [
+      0.0,
+      0.02381155533885908
+    ],
+    "bootstrap_repetitions": 2000,
+    "calendar_week_blocks": 60,
+    "limitation": "Exploratory weekly interval over two previously examined seasons; model search and all serial dependence are not captured."
+  }
+}

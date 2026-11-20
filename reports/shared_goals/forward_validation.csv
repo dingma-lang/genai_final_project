@@ -1,0 +1,61 @@
+model,config,season,training_matches,training_team_rows,validation_matches,log_loss
+linear_goals,"{""alpha"": 0.1}",1920,1674,3348,350,0.9806483977392233
+linear_goals,"{""alpha"": 0.1}",2021,2024,4048,348,1.0166268629014525
+linear_goals,"{""alpha"": 0.1}",2122,2372,4744,350,0.972929160454611
+linear_goals,"{""alpha"": 0.1}",2223,2722,5444,350,0.9628283733520598
+linear_goals,"{""alpha"": 0.1}",2324,3072,6144,349,0.9332142812376418
+linear_goals,"{""alpha"": 1.0}",1920,1674,3348,350,0.9878733682039663
+linear_goals,"{""alpha"": 1.0}",2021,2024,4048,348,1.0089695801482732
+linear_goals,"{""alpha"": 1.0}",2122,2372,4744,350,0.9803889272201903
+linear_goals,"{""alpha"": 1.0}",2223,2722,5444,350,0.9750694749716505
+linear_goals,"{""alpha"": 1.0}",2324,3072,6144,349,0.9448187622834846
+linear_goals_and_xg,"{""alpha"": 0.1}",1920,1674,3348,350,0.9769574834532568
+linear_goals_and_xg,"{""alpha"": 0.1}",2021,2024,4048,348,1.0146850888694043
+linear_goals_and_xg,"{""alpha"": 0.1}",2122,2372,4744,350,0.9707948702794049
+linear_goals_and_xg,"{""alpha"": 0.1}",2223,2722,5444,350,0.9629829793135241
+linear_goals_and_xg,"{""alpha"": 0.1}",2324,3072,6144,349,0.9340459443603305
+linear_goals_and_xg,"{""alpha"": 1.0}",1920,1674,3348,350,0.9870162743042852
+linear_goals_and_xg,"{""alpha"": 1.0}",2021,2024,4048,348,1.008612384812809
+linear_goals_and_xg,"{""alpha"": 1.0}",2122,2372,4744,350,0.9793942714266567
+linear_goals_and_xg,"{""alpha"": 1.0}",2223,2722,5444,350,0.9754986173019522
+linear_goals_and_xg,"{""alpha"": 1.0}",2324,3072,6144,349,0.9467193904037662
+catboost_goals,"{""depth"": 3, ""iterations"": 300}",1920,1674,3348,350,0.9809987502760321
+catboost_goals,"{""depth"": 3, ""iterations"": 300}",2021,2024,4048,348,1.009272155494163
+catboost_goals,"{""depth"": 3, ""iterations"": 300}",2122,2372,4744,350,0.9730314398871311
+catboost_goals,"{""depth"": 3, ""iterations"": 300}",2223,2722,5444,350,0.9641500773606677
+catboost_goals,"{""depth"": 3, ""iterations"": 300}",2324,3072,6144,349,0.9427516719475877
+catboost_goals,"{""depth"": 3, ""iterations"": 600}",1920,1674,3348,350,0.981549110338758
+catboost_goals,"{""depth"": 3, ""iterations"": 600}",2021,2024,4048,348,1.0149199278731629
+catboost_goals,"{""depth"": 3, ""iterations"": 600}",2122,2372,4744,350,0.9794384195588226
+catboost_goals,"{""depth"": 3, ""iterations"": 600}",2223,2722,5444,350,0.9710706502623325
+catboost_goals,"{""depth"": 3, ""iterations"": 600}",2324,3072,6144,349,0.9464972260515379
+catboost_goals,"{""depth"": 4, ""iterations"": 300}",1920,1674,3348,350,0.9796576010862365
+catboost_goals,"{""depth"": 4, ""iterations"": 300}",2021,2024,4048,348,1.0107495376401285
+catboost_goals,"{""depth"": 4, ""iterations"": 300}",2122,2372,4744,350,0.973396779597185
+catboost_goals,"{""depth"": 4, ""iterations"": 300}",2223,2722,5444,350,0.9641429470010136
+catboost_goals,"{""depth"": 4, ""iterations"": 300}",2324,3072,6144,349,0.9444329191692431
+catboost_goals,"{""depth"": 4, ""iterations"": 600}",1920,1674,3348,350,0.9796127041756377
+catboost_goals,"{""depth"": 4, ""iterations"": 600}",2021,2024,4048,348,1.022474302212895
+catboost_goals,"{""depth"": 4, ""iterations"": 600}",2122,2372,4744,350,0.977691632261582
+catboost_goals,"{""depth"": 4, ""iterations"": 600}",2223,2722,5444,350,0.9660366789576305
+catboost_goals,"{""depth"": 4, ""iterations"": 600}",2324,3072,6144,349,0.9471104003464357
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 300}",1920,1674,3348,350,0.9819245157121204
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 300}",2021,2024,4048,348,1.0077692607185662
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 300}",2122,2372,4744,350,0.9703239130656639
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 300}",2223,2722,5444,350,0.9619055844280271
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 300}",2324,3072,6144,349,0.9419185751473335
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 600}",1920,1674,3348,350,0.9823264098288236
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 600}",2021,2024,4048,348,1.0061376701005926
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 600}",2122,2372,4744,350,0.9698837017797244
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 600}",2223,2722,5444,350,0.9661548251470192
+catboost_goals_and_xg,"{""depth"": 3, ""iterations"": 600}",2324,3072,6144,349,0.9410715670594207
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 300}",1920,1674,3348,350,0.9806001853338617
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 300}",2021,2024,4048,348,1.010993318448423
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 300}",2122,2372,4744,350,0.9720926737740998
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 300}",2223,2722,5444,350,0.962732573117738
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 300}",2324,3072,6144,349,0.9423758004861233
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 600}",1920,1674,3348,350,0.9842897389815886
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 600}",2021,2024,4048,348,1.0098910735747944
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 600}",2122,2372,4744,350,0.9705654439140101
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 600}",2223,2722,5444,350,0.9663971417429716
+catboost_goals_and_xg,"{""depth"": 4, ""iterations"": 600}",2324,3072,6144,349,0.941653341793863
