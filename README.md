@@ -29,6 +29,8 @@ The final-season outcomes have now been inspected for this fixed design. Do not 
 
 ## Files to open
 
+- [Training toward 70 percent across 150 matches](reports/precision150/findings.md)
+- [70 percent precision across about 100 matches](reports/coverage_target/findings.md)
 - [Shared goal-scoring models and the latest precision results](reports/shared_goals/findings.md)
 - [Further precision tests, calibration, and monthly team-strength updates](reports/confidence/findings.md)
 - [Expected goals, goal-count models, and higher-confidence predictions](reports/goal_score/findings.md)

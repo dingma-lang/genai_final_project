@@ -18,6 +18,12 @@ models/confidence/
 /reports/team_strength/snapshot_predictions.csv
 models/shared_goals/
 /reports/shared_goals/predictions.csv
+models/coverage_target/
+/reports/coverage_target/predictions.csv
+/reports/coverage_target/selected_100_matches.csv
+models/precision150/
+/reports/precision150/predictions.csv
+/reports/precision150/market/predictions.csv
 /reports/precision/test_predictions.csv
 /reports/keeper_form/predictions_and_team_status.csv
 /reports/keeper_form/team_form_timeline.csv
