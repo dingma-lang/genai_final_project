@@ -1,0 +1,126 @@
+{
+  "created_utc": "2026-11-21T00:27:18.911142+00:00",
+  "mode": "full_L5",
+  "analysis_sha256": "b8899feb7b8ef6fc80dd3f173a474c054e9f0198275458fd31bd4d6ebf2f6a74",
+  "feature_file_sha256": "69ca99de09893802871b0af38af0519a651760739f62ee27ad626aa64db52f29",
+  "llm_provenance": [
+    [
+      "gpt-6.1-sol",
+      "gpt-6.1-sol",
+      "44aee5cffdf79b0660835faf7b4ff88f65e530269975ba0e8758f95ceac71e7c",
+      "codex-cli 0.169.0-alpha.11.1",
+      "codex_cli",
+      "a104ae1c29a321b46f170bc404027842be3e81084b16e05b22e1c76814417ebd"
+    ]
+  ],
+  "code_sha256": {
+    "model.py": "4c5454b99b3ba36f1eb6ad1259085694f783cc696a107bb91264178026d18e6f",
+    "common.py": "e67163fffcc1e3a532aa95bf8f58098e4d4881fd7bed0715509a2282e2bf9003"
+  },
+  "versions": {
+    "sklearn": "1.9.0",
+    "pandas": "3.0.6",
+    "numpy": "2.5.5"
+  },
+  "train_seasons": [
+    "2013-14",
+    "2014-15",
+    "2015-16",
+    "2016-17"
+  ],
+  "test_season": "2017-18",
+  "train_n": 1014,
+  "test_n": 279,
+  "feature_sets": {
+    "baseline": [
+      "HomeLast3Pts",
+      "HomeLast3GD",
+      "AwayLast3Pts",
+      "AwayLast3GD"
+    ],
+    "llm_only": [
+      "home_sentiment_score",
+      "home_sentiment_unknown",
+      "away_sentiment_score",
+      "away_sentiment_unknown",
+      "home_form",
+      "home_availability",
+      "home_motivation",
+      "home_managerial_uncertainty",
+      "away_form",
+      "away_availability",
+      "away_motivation",
+      "away_managerial_uncertainty"
+    ],
+    "combined": [
+      "HomeLast3Pts",
+      "HomeLast3GD",
+      "AwayLast3Pts",
+      "AwayLast3GD",
+      "home_sentiment_score",
+      "home_sentiment_unknown",
+      "away_sentiment_score",
+      "away_sentiment_unknown",
+      "home_form",
+      "home_availability",
+      "home_motivation",
+      "home_managerial_uncertainty",
+      "away_form",
+      "away_availability",
+      "away_motivation",
+      "away_managerial_uncertainty"
+    ],
+    "baseline_plus_sentiment": [
+      "HomeLast3Pts",
+      "HomeLast3GD",
+      "AwayLast3Pts",
+      "AwayLast3GD",
+      "home_sentiment_score",
+      "home_sentiment_unknown",
+      "away_sentiment_score",
+      "away_sentiment_unknown"
+    ],
+    "baseline_plus_context": [
+      "HomeLast3Pts",
+      "HomeLast3GD",
+      "AwayLast3Pts",
+      "AwayLast3GD",
+      "home_form",
+      "home_availability",
+      "home_motivation",
+      "home_managerial_uncertainty",
+      "away_form",
+      "away_availability",
+      "away_motivation",
+      "away_managerial_uncertainty"
+    ]
+  },
+  "seed": 244,
+  "class_probability_order": [
+    "A",
+    "D",
+    "H"
+  ],
+  "selection": "Minimum pooled forward-validation log loss; ties follow fixed candidate order. Test metrics never enter tuning.",
+  "folds": [
+    {
+      "validation_season": "2014-15",
+      "train_n": 110,
+      "validation_n": 303
+    },
+    {
+      "validation_season": "2015-16",
+      "train_n": 413,
+      "validation_n": 300
+    },
+    {
+      "validation_season": "2016-17",
+      "train_n": 713,
+      "validation_n": 301
+    }
+  ],
+  "interpretation": "Logistic coefficients use train-standardized numeric inputs and one-hot categories; associations, not causal effects. Forest importance is descriptive and biased.",
+  "llm_models_fitted": true,
+  "extraction_quality_checks_complete": false,
+  "human_reference_validation": "omitted"
+}

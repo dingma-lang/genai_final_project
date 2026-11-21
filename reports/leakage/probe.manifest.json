@@ -1,0 +1,32 @@
+{
+  "model": "gpt-6.1-sol",
+  "prompt_sha256": "3361f56a7fcbb875ee4b4e92219e85407f627529f1207f76ff8d37ec67a1f5d8",
+  "api_version": "codex-cli 0.169.0-alpha.11.1",
+  "settings_sha256": "1aa84282e01134de028ba0d615332ecc3ab0a26b7c76f92b9de260867f366490",
+  "settings": {
+    "provider": "codex_cli",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "batch_size": 20,
+    "seed": 244,
+    "temperature": null,
+    "overrides": {
+      "web_search": "disabled",
+      "features.shell_tool": false,
+      "features.shell_snapshot": false,
+      "features.apply_patch_freeform": false,
+      "features.view_image": false,
+      "features.multi_agent": false,
+      "apps._default.enabled": false,
+      "mcp_servers": {}
+    },
+    "ignore_user_config": true,
+    "ephemeral": true,
+    "sandbox": "read-only",
+    "id_scheme": "random four-digit probe IDs, fixed by seed, identical across levels",
+    "batching": "one seeded random order, identical across levels"
+  },
+  "prompt": "This is a research diagnostic about what a language model already knows. Each input is a short preview of an English football match, written by a journalist before kick-off. Some names, places and dates may have been replaced with placeholders such as [HOME], [AWAY], [PERSON_1], [CLUB_1], [VENUE], [YEAR] or [TIME].\n\nFor each input, answer from your own knowledge and judgement. Use no tools, files, search or external retrieval. Judge each input separately. Return one record per input ID with these fields:\n- \"home\": your best guess of the real home team (full club name), or \"unknown\"\n- \"away\": your best guess of the real away team (full club name), or \"unknown\"\n- \"season\": your best guess of the season in which the match was played, written like \"2016-17\", or \"unknown\"\n- \"id_confidence\": an integer from 0 to 100 for how confident you are that you know exactly which match this is\n- \"result\": the result of the match: \"H\" home win, \"D\" draw or \"A\" away win. Always choose one, even if guessing.\n- \"p_home\", \"p_draw\", \"p_away\": your probabilities for the three results, each between 0 and 1, summing to 1.\nReturn only the JSON object. Do not add explanations.",
+  "n_matches": 279,
+  "note": "Answers are model guesses; raw responses stay in data/leakage/."
+}

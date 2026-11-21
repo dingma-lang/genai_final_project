@@ -1,0 +1,21 @@
+{
+  "format": "feature_values_v1",
+  "n_previews": 1409,
+  "values_sha256": "69ca99de09893802871b0af38af0519a651760739f62ee27ad626aa64db52f29",
+  "source_extraction_sha256": "20cbad34e43af43516d203e5664f6c9c64cbc85638900240bd8e326d9228019c",
+  "analysis_sha256": "b8899feb7b8ef6fc80dd3f173a474c054e9f0198275458fd31bd4d6ebf2f6a74",
+  "llm_provenance": [
+    [
+      "gpt-6.1-sol",
+      "gpt-6.1-sol",
+      "44aee5cffdf79b0660835faf7b4ff88f65e530269975ba0e8758f95ceac71e7c",
+      "codex-cli 0.169.0-alpha.11.1",
+      "codex_cli",
+      "a104ae1c29a321b46f170bc404027842be3e81084b16e05b22e1c76814417ebd"
+    ]
+  ],
+  "inputs_file": "data/masked/llm_inputs_L5.jsonl",
+  "inputs_sha256": "6dd28166dd31a09f6f09f5f4bf0e93845f76c33015b92d7baba9b50de1f3bad7",
+  "human_reference_validation": "omitted",
+  "note": "AI-derived feature values only. Supporting quotes and raw previews remain local. This export supports model reproduction, not independent semantic validation."
+}

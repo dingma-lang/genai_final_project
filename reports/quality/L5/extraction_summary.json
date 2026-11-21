@@ -1,0 +1,93 @@
+{
+  "n_previews": 1409,
+  "feature_values": 14090,
+  "llm_provenance": [
+    [
+      "gpt-6.1-sol",
+      "gpt-6.1-sol",
+      "44aee5cffdf79b0660835faf7b4ff88f65e530269975ba0e8758f95ceac71e7c",
+      "codex-cli 0.169.0-alpha.11.1",
+      "codex_cli",
+      "a104ae1c29a321b46f170bc404027842be3e81084b16e05b22e1c76814417ebd"
+    ]
+  ],
+  "feature_file_sha256": "20cbad34e43af43516d203e5664f6c9c64cbc85638900240bd8e326d9228019c",
+  "value_counts": {
+    "home_sentiment": {
+      "-1": 426,
+      "1": 424,
+      "unknown": 215,
+      "0": 147,
+      "-2": 107,
+      "2": 90
+    },
+    "home_form": {
+      "unknown": 467,
+      "poor": 437,
+      "good": 368,
+      "mixed": 137
+    },
+    "home_availability": {
+      "unknown": 1128,
+      "major": 151,
+      "minor": 121,
+      "none_mentioned": 9
+    },
+    "home_motivation": {
+      "unknown": 945,
+      "high": 436,
+      "low": 28
+    },
+    "home_managerial_uncertainty": {
+      "unknown": 1290,
+      "yes": 113,
+      "no": 6
+    },
+    "away_sentiment": {
+      "1": 424,
+      "-1": 401,
+      "unknown": 333,
+      "0": 119,
+      "-2": 74,
+      "2": 58
+    },
+    "away_form": {
+      "unknown": 605,
+      "poor": 348,
+      "good": 324,
+      "mixed": 132
+    },
+    "away_availability": {
+      "unknown": 1227,
+      "major": 98,
+      "minor": 81,
+      "none_mentioned": 3
+    },
+    "away_motivation": {
+      "unknown": 1005,
+      "high": 375,
+      "low": 29
+    },
+    "away_managerial_uncertainty": {
+      "unknown": 1340,
+      "yes": 60,
+      "no": 9
+    }
+  },
+  "batch_count": 57,
+  "batch_usage_total": {
+    "input_tokens": 928982,
+    "cached_input_tokens": 0,
+    "output_tokens": 99104
+  },
+  "automated_corrections": {
+    "home_availability: cleared evidence for unknown": 3,
+    "home_motivation: unsupported quotation replaced with unknown": 2,
+    "away_sentiment: unsupported quotation replaced with unknown": 2,
+    "away_form: unsupported quotation replaced with unknown": 1,
+    "away_motivation: unsupported quotation replaced with unknown": 2,
+    "away_managerial_uncertainty: cleared evidence for unknown": 1
+  },
+  "human_agreement_computed": false,
+  "interpretation": "Output IDs, provenance, values, and quotation occurrence were validated locally. This does not measure semantic extraction accuracy, human agreement, repeatability, or absence of memorized outcomes."
+}

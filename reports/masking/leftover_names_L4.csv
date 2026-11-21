@@ -1,0 +1,21 @@
+name,spacy_label,count,example_MatchID
+EFL Cup,EVENT,12,621
+World Cup,EVENT,9,1465
+New Year’s Day,EVENT,8,1215
+Cup,EVENT,6,1507
+Boxing Day,EVENT,6,1503
+Africa Cup of Nations,EVENT,6,1218
+Capital One Cup,ORG,5,1335
+Community Shield,ORG,5,1033
+Carabao Cup,EVENT,5,298
+New Year’s Eve,EVENT,4,738
+Capital One Cup,EVENT,3,1375
+New Year's Day,EVENT,2,1483
+Premier League era,ORG,1,1460
+Fairs Cup,EVENT,1,1411
+South,LOC,1,1362
+Dutch,NORP,1,1067
+Premier league champions,ORG,1,525
+Premier League’s Golden,ORG,1,420
+A Champions League,ORG,1,381
+Gracenote Sports,ORG,1,45

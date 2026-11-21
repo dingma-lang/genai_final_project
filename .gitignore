@@ -4,6 +4,12 @@ data/llm_inputs.jsonl
 data/pilot_labels.csv
 data/*responses/
 data/*.jsonl
+# Per-match answers of the team-name/date leakage diagnostic: no Guardian text, kept as evidence.
+!data/codex_metadata_diagnostic.jsonl
+# Masked previews contain Guardian text.
+data/masked/
+# Leakage-probe answers can quote masked previews; keep raw responses local.
+data/leakage/
 __pycache__/
 .mplconfig/
 *.joblib

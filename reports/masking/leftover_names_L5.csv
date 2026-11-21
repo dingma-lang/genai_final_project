@@ -1,0 +1,10 @@
+name,spacy_label,count,example_MatchID
+Cup,EVENT,3,1397
+Premier League era,ORG,1,1460
+Fairs Cup,EVENT,1,1411
+South,LOC,1,1362
+Dutch,NORP,1,1067
+Premier league champions,ORG,1,525
+Premier League’s Golden,ORG,1,420
+A Champions League,ORG,1,381
+Gracenote Sports,ORG,1,45

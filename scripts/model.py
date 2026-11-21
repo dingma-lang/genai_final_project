@@ -144,7 +144,7 @@ def plot_results(metrics, output):
     plt.close(fig)
 
 
-def run(features=None, human_validation='pending'):
+def run(features=None, human_validation='pending', tag=None):
     df = load_analysis()
     eligible = df.loc[df[BASE].notna().all(axis=1)].copy()
     provenance = None
@@ -161,6 +161,8 @@ def run(features=None, human_validation='pending'):
         raise ValueError('Cohort does not match the documented 1014/279 split')
     folds = forward_folds(train)
     mode = 'full' if features else 'baseline'
+    if tag:
+        mode += '_' + tag  # e.g. reports/full_L5, so earlier results are not overwritten
     output = ROOT / 'reports' / mode
     models = ROOT / 'models' / mode
     output.mkdir(parents=True, exist_ok=True)
@@ -275,5 +277,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--features', type=Path, help='Extraction JSONL or exported feature CSV with its manifest; omit for baseline only')
     parser.add_argument('--human-validation', choices=['pending', 'omitted'], default='pending')
+    parser.add_argument('--tag', help='Suffix for the report and model folders, e.g. L5 writes reports/full_L5')
     args = parser.parse_args()
-    run(args.features, args.human_validation)
+    if args.tag and not args.tag.replace('_', '').isalnum():
+        parser.error('--tag may contain only letters, numbers and underscores')
+    run(args.features, args.human_validation, args.tag)

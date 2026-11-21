@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from common import FEATURES, ROOT, digest, load_records, read_inputs, write_json
+from common import FEATURES, ROOT, digest, inputs_path, load_records, read_inputs, write_json
 
 
 def main():
@@ -18,6 +18,8 @@ def main():
         'source_extraction_sha256': digest(args.features.read_text()),
         'analysis_sha256': digest((ROOT / 'data/processed/previews_with_results.csv').read_text()),
         'llm_provenance': sorted([list(row) for row in provenance]),
+        'inputs_file': str(inputs_path().relative_to(ROOT)) if inputs_path().is_relative_to(ROOT) else str(inputs_path()),
+        'inputs_sha256': digest(inputs_path().read_text()),
         'human_reference_validation': 'omitted',
         'note': 'AI-derived feature values only. Supporting quotes and raw previews remain local. This export supports model reproduction, not independent semantic validation.'})
     print(f'Exported {len(frame)} feature rows: {args.output}')

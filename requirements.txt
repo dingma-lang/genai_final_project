@@ -4,3 +4,5 @@ scikit-learn==1.9.0
 scipy==1.18.1
 matplotlib==3.11.2
 joblib==1.5.3
+spacy==3.8.18
+# plus the model: python -m spacy download en_core_web_lg (3.8.0)

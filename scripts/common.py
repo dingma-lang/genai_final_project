@@ -1,5 +1,6 @@
 import hashlib
 import json
+import os
 import re
 import unicodedata
 from pathlib import Path
@@ -123,8 +124,18 @@ def load_feature_values(path, analysis_path=None):
     return frame, provenance
 
 
+def inputs_path():
+    """Masked-preview file to use. Defaults to data/llm_inputs.jsonl; set LLM_INPUTS to use another
+    masking level, e.g. LLM_INPUTS=data/masked/llm_inputs_L5.jsonl (relative to the repository root)."""
+    override = os.environ.get('LLM_INPUTS')
+    if not override:
+        return ROOT / 'data/llm_inputs.jsonl'
+    path = Path(override)
+    return path if path.is_absolute() else ROOT / path
+
+
 def read_inputs(path=None):
-    return [json.loads(line) for line in (Path(path) if path else ROOT / 'data/llm_inputs.jsonl').read_text().splitlines()]
+    return [json.loads(line) for line in (Path(path) if path else inputs_path()).read_text().splitlines()]
 
 
 def mask_preview(text, home_aliases, away_aliases):
