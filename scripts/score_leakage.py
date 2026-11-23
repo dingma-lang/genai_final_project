@@ -41,8 +41,9 @@ LEVEL_LABELS = {
 
 
 def norm(name):
-    name = str(name).lower().replace('&', 'and')
-    name = re.sub(r'\b(fc|afc|the)\b', ' ', name)
+    name = str(name).lower().replace('&', 'and').replace('.', '')
+    # Formal names: "Arsenal Football Club", "Hull City Association Football Club", "Arsenal F.C."
+    name = re.sub(r'\b(association football club|football club|fc|afc|the)\b', ' ', name)
     return ' '.join(re.sub(r'[^a-z0-9 ]', ' ', name).split())
 
 
@@ -139,14 +140,14 @@ def main():
     ident = summary.both_teams_identified * 100
     ax.plot(x[ident.notna()], ident[ident.notna()], marker='s', color='#2c3e50', label='Both teams identified')
     ax.axhline(baseline_acc * 100, ls='--', color='#7f8c8d', lw=1)
-    ax.text(x[-1], baseline_acc * 100 + 1.5, f'Recent-results model {baseline_acc:.0%}', ha='right', fontsize=8, color='#555')
+    ax.text(x[0], baseline_acc * 100 + 1.5, f'Recent-results model {baseline_acc:.0%}', ha='left', fontsize=8, color='#555')
     ax.axhline(home_acc * 100, ls=':', color='#7f8c8d', lw=1)
-    ax.text(x[-1], home_acc * 100 - 4, f'Always home {home_acc:.0%}', ha='right', fontsize=8, color='#555')
+    ax.text(x[0], home_acc * 100 - 4, f'Always home {home_acc:.0%}', ha='left', fontsize=8, color='#555')
     ax.set_xticks(x, [LEVEL_LABELS.get(l, l) for l in summary.level], rotation=20, ha='right', fontsize=8)
     ax.set_ylim(0, 105)
     ax.set_ylabel('% of 279 held-out matches')
     ax.set_title('Match identification and result recall by masking level')
-    ax.legend(frameon=False, fontsize=8, loc='upper right')
+    ax.legend(frameon=False, fontsize=8, loc='lower left', bbox_to_anchor=(0, 0.08))
     ax.spines[['top', 'right']].set_visible(False)
     fig.tight_layout()
     fig.savefig(OUT / 'leakage_by_level.png', dpi=180)

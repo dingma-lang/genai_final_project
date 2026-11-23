@@ -338,46 +338,46 @@ L2,21,Burnley,Brighton,2017-18,D,Burnley,Brighton & Hove Albion,2017-18,99,D,0.0
 L2,286,Swansea,Newcastle,2017-18,A,Swansea City,Newcastle United,2017-18,100,A,0.005,0.005,0.99,True,True,True,True,True,True,0.01005033585350145
 L2,87,Southampton,Stoke,2017-18,D,Southampton,Stoke City,2017-18,100,D,0.01,0.98,0.01,True,True,True,True,True,True,0.020202707317519466
 L2,7,Crystal Palace,West Brom,2017-18,H,Crystal Palace,West Bromwich Albion,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
-L2,194,Chelsea,Newcastle,2017-18,H,Chelsea Football Club,Newcastle United Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L2,206,Watford,West Ham,2017-18,H,Watford Football Club,West Ham United Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L2,278,Huddersfield,Leicester,2017-18,D,Huddersfield Town Association Football Club,Leicester City Football Club,2017-18,98,D,0.02,0.96,0.02,False,False,False,True,False,True,0.040821994520255166
-L2,35,Watford,Crystal Palace,2017-18,D,Watford Football Club,Crystal Palace Football Club,2017-18,99,D,0.01,0.98,0.01,False,False,False,True,False,True,0.020202707317519466
-L2,183,Tottenham,Stoke,2017-18,H,Tottenham Hotspur Football Club,Stoke City Football Club,2017-18,99,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,59,Everton,Man City,2017-18,A,Everton Football Club,Manchester City Football Club,2017-18,100,A,0.005,0.005,0.99,False,False,False,True,False,True,0.01005033585350145
-L2,129,West Brom,Southampton,2017-18,A,West Bromwich Albion Football Club,Southampton Football Club,2017-18,98,A,0.02,0.02,0.96,False,False,False,True,False,True,0.040821994520255166
-L2,179,Liverpool,Everton,2017-18,D,Liverpool Football Club,Everton Football Club,2017-18,100,D,0.005,0.99,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,42,Southampton,Chelsea,2017-18,A,Southampton Football Club,Chelsea Football Club,2017-18,100,A,0.005,0.005,0.99,False,False,False,True,False,True,0.01005033585350145
-L2,247,Leicester,West Brom,2017-18,D,Leicester City Football Club,West Bromwich Albion Football Club,2017-18,98,D,0.02,0.96,0.02,False,False,False,True,False,True,0.040821994520255166
-L2,15,Leicester,West Ham,2017-18,A,Leicester City Football Club,West Ham United Football Club,2017-18,99,A,0.01,0.01,0.98,False,False,False,True,False,True,0.020202707317519466
-L2,152,Huddersfield,Burnley,2017-18,D,Huddersfield Town Association Football Club,Burnley Football Club,2017-18,97,D,0.03,0.94,0.03,False,False,False,True,False,True,0.06187540371808753
-L2,2,Tottenham,Leicester,2017-18,H,Tottenham Hotspur Football Club,Leicester City Football Club,2017-18,100,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,201,Tottenham,West Brom,2017-18,D,Tottenham Hotspur Football Club,West Bromwich Albion Football Club,2017-18,99,D,0.01,0.98,0.01,False,False,False,True,False,True,0.020202707317519466
-L2,32,Stoke,Burnley,2017-18,D,Stoke City Football Club,Burnley Football Club,2017-18,97,D,0.025,0.95,0.025,False,False,False,True,False,True,0.05129329438755058
-L2,65,Crystal Palace,Liverpool,2017-18,A,Crystal Palace Football Club,Liverpool Football Club,2017-18,100,A,0.005,0.005,0.99,False,False,False,True,False,True,0.01005033585350145
-L2,26,Southampton,Bournemouth,2017-18,H,Southampton Football Club,AFC Bournemouth,2017-18,99,H,0.98,0.01,0.01,False,True,False,True,False,True,0.020202707317519466
-L2,100,Brighton,Swansea,2017-18,H,Brighton & Hove Albion Football Club,Swansea City Association Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L2,45,Crystal Palace,Brighton,2017-18,H,Crystal Palace Football Club,Brighton & Hove Albion Football Club,2017-18,100,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,123,Leicester,Swansea,2017-18,D,Leicester City Football Club,Swansea City Association Football Club,2017-18,99,D,0.01,0.98,0.01,False,False,False,True,False,True,0.020202707317519466
-L2,167,Everton,Swansea,2017-18,H,Everton Football Club,Swansea City Association Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L2,29,Arsenal,West Ham,2017-18,H,Arsenal Football Club,West Ham United Football Club,2017-18,99,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,267,Swansea,Watford,2017-18,A,Swansea City Association Football Club,Watford Football Club,2017-18,99,A,0.02,0.03,0.95,False,False,False,True,False,True,0.05129329438755058
-L2,34,West Brom,Liverpool,2017-18,D,West Bromwich Albion Football Club,Liverpool Football Club,2017-18,100,D,0.005,0.99,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,281,Crystal Palace,Southampton,2017-18,A,Crystal Palace Football Club,Southampton Football Club,2017-18,99,A,0.01,0.01,0.98,False,False,False,True,False,True,0.020202707317519466
-L2,218,Man City,Arsenal,2017-18,H,Manchester City Football Club,Arsenal Football Club,2017-18,99,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,207,Brighton,Stoke,2017-18,D,Brighton & Hove Albion Football Club,Stoke City Football Club,2017-18,99,D,0.01,0.98,0.01,False,False,False,True,False,True,0.020202707317519466
-L2,88,Tottenham,Huddersfield,2017-18,H,Tottenham Hotspur Football Club,Huddersfield Town Association Football Club,2017-18,99,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,293,Brighton,West Brom,2017-18,H,Brighton & Hove Albion Football Club,West Bromwich Albion Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L2,18,Tottenham,Watford,2017-18,H,Tottenham Hotspur Football Club,Watford Football Club,2017-18,99,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,180,Newcastle,Leicester,2017-18,A,Newcastle United Football Club,Leicester City Football Club,2017-18,98,A,0.02,0.02,0.96,False,False,False,True,False,True,0.040821994520255166
-L2,170,Watford,Huddersfield,2017-18,A,Watford Football Club,Huddersfield Town Association Football Club,2017-18,99,A,0.01,0.01,0.98,False,False,False,True,False,True,0.020202707317519466
-L2,245,Brighton,Everton,2017-18,D,Brighton & Hove Albion Football Club,Everton Football Club,2017-18,98,D,0.02,0.96,0.02,False,False,False,True,False,True,0.040821994520255166
-L2,147,Crystal Palace,Burnley,2017-18,H,Crystal Palace Football Club,Burnley Football Club,2017-18,99,H,0.97,0.02,0.01,False,False,False,True,False,True,0.030459207484708574
-L2,249,Tottenham,Bournemouth,2017-18,H,Tottenham Hotspur Football Club,AFC Bournemouth,2017-18,99,H,0.99,0.005,0.005,False,True,False,True,False,True,0.01005033585350145
-L2,75,Stoke,Man City,2017-18,A,Stoke City Football Club,Manchester City Football Club,2017-18,99,A,0.005,0.005,0.99,False,False,False,True,False,True,0.01005033585350145
-L2,236,Tottenham,Liverpool,2017-18,H,Tottenham Hotspur Football Club,Liverpool Football Club,2017-18,100,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,72,Liverpool,Watford,2017-18,H,Liverpool Football Club,Watford Football Club,2017-18,100,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L2,143,Huddersfield,West Ham,2017-18,A,Huddersfield Town Association Football Club,West Ham United Football Club,2017-18,98,A,0.01,0.02,0.97,False,False,False,True,False,True,0.030459207484708574
-L2,205,Crystal Palace,Stoke,2017-18,H,Crystal Palace Football Club,Stoke City Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
+L2,194,Chelsea,Newcastle,2017-18,H,Chelsea Football Club,Newcastle United Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,206,Watford,West Ham,2017-18,H,Watford Football Club,West Ham United Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,278,Huddersfield,Leicester,2017-18,D,Huddersfield Town Association Football Club,Leicester City Football Club,2017-18,98,D,0.02,0.96,0.02,True,True,True,True,True,True,0.040821994520255166
+L2,35,Watford,Crystal Palace,2017-18,D,Watford Football Club,Crystal Palace Football Club,2017-18,99,D,0.01,0.98,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,183,Tottenham,Stoke,2017-18,H,Tottenham Hotspur Football Club,Stoke City Football Club,2017-18,99,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,59,Everton,Man City,2017-18,A,Everton Football Club,Manchester City Football Club,2017-18,100,A,0.005,0.005,0.99,True,True,True,True,True,True,0.01005033585350145
+L2,129,West Brom,Southampton,2017-18,A,West Bromwich Albion Football Club,Southampton Football Club,2017-18,98,A,0.02,0.02,0.96,True,True,True,True,True,True,0.040821994520255166
+L2,179,Liverpool,Everton,2017-18,D,Liverpool Football Club,Everton Football Club,2017-18,100,D,0.005,0.99,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,42,Southampton,Chelsea,2017-18,A,Southampton Football Club,Chelsea Football Club,2017-18,100,A,0.005,0.005,0.99,True,True,True,True,True,True,0.01005033585350145
+L2,247,Leicester,West Brom,2017-18,D,Leicester City Football Club,West Bromwich Albion Football Club,2017-18,98,D,0.02,0.96,0.02,True,True,True,True,True,True,0.040821994520255166
+L2,15,Leicester,West Ham,2017-18,A,Leicester City Football Club,West Ham United Football Club,2017-18,99,A,0.01,0.01,0.98,True,True,True,True,True,True,0.020202707317519466
+L2,152,Huddersfield,Burnley,2017-18,D,Huddersfield Town Association Football Club,Burnley Football Club,2017-18,97,D,0.03,0.94,0.03,True,True,True,True,True,True,0.06187540371808753
+L2,2,Tottenham,Leicester,2017-18,H,Tottenham Hotspur Football Club,Leicester City Football Club,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,201,Tottenham,West Brom,2017-18,D,Tottenham Hotspur Football Club,West Bromwich Albion Football Club,2017-18,99,D,0.01,0.98,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,32,Stoke,Burnley,2017-18,D,Stoke City Football Club,Burnley Football Club,2017-18,97,D,0.025,0.95,0.025,True,True,True,True,True,True,0.05129329438755058
+L2,65,Crystal Palace,Liverpool,2017-18,A,Crystal Palace Football Club,Liverpool Football Club,2017-18,100,A,0.005,0.005,0.99,True,True,True,True,True,True,0.01005033585350145
+L2,26,Southampton,Bournemouth,2017-18,H,Southampton Football Club,AFC Bournemouth,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,100,Brighton,Swansea,2017-18,H,Brighton & Hove Albion Football Club,Swansea City Association Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,45,Crystal Palace,Brighton,2017-18,H,Crystal Palace Football Club,Brighton & Hove Albion Football Club,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,123,Leicester,Swansea,2017-18,D,Leicester City Football Club,Swansea City Association Football Club,2017-18,99,D,0.01,0.98,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,167,Everton,Swansea,2017-18,H,Everton Football Club,Swansea City Association Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,29,Arsenal,West Ham,2017-18,H,Arsenal Football Club,West Ham United Football Club,2017-18,99,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,267,Swansea,Watford,2017-18,A,Swansea City Association Football Club,Watford Football Club,2017-18,99,A,0.02,0.03,0.95,True,True,True,True,True,True,0.05129329438755058
+L2,34,West Brom,Liverpool,2017-18,D,West Bromwich Albion Football Club,Liverpool Football Club,2017-18,100,D,0.005,0.99,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,281,Crystal Palace,Southampton,2017-18,A,Crystal Palace Football Club,Southampton Football Club,2017-18,99,A,0.01,0.01,0.98,True,True,True,True,True,True,0.020202707317519466
+L2,218,Man City,Arsenal,2017-18,H,Manchester City Football Club,Arsenal Football Club,2017-18,99,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,207,Brighton,Stoke,2017-18,D,Brighton & Hove Albion Football Club,Stoke City Football Club,2017-18,99,D,0.01,0.98,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,88,Tottenham,Huddersfield,2017-18,H,Tottenham Hotspur Football Club,Huddersfield Town Association Football Club,2017-18,99,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,293,Brighton,West Brom,2017-18,H,Brighton & Hove Albion Football Club,West Bromwich Albion Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L2,18,Tottenham,Watford,2017-18,H,Tottenham Hotspur Football Club,Watford Football Club,2017-18,99,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,180,Newcastle,Leicester,2017-18,A,Newcastle United Football Club,Leicester City Football Club,2017-18,98,A,0.02,0.02,0.96,True,True,True,True,True,True,0.040821994520255166
+L2,170,Watford,Huddersfield,2017-18,A,Watford Football Club,Huddersfield Town Association Football Club,2017-18,99,A,0.01,0.01,0.98,True,True,True,True,True,True,0.020202707317519466
+L2,245,Brighton,Everton,2017-18,D,Brighton & Hove Albion Football Club,Everton Football Club,2017-18,98,D,0.02,0.96,0.02,True,True,True,True,True,True,0.040821994520255166
+L2,147,Crystal Palace,Burnley,2017-18,H,Crystal Palace Football Club,Burnley Football Club,2017-18,99,H,0.97,0.02,0.01,True,True,True,True,True,True,0.030459207484708574
+L2,249,Tottenham,Bournemouth,2017-18,H,Tottenham Hotspur Football Club,AFC Bournemouth,2017-18,99,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,75,Stoke,Man City,2017-18,A,Stoke City Football Club,Manchester City Football Club,2017-18,99,A,0.005,0.005,0.99,True,True,True,True,True,True,0.01005033585350145
+L2,236,Tottenham,Liverpool,2017-18,H,Tottenham Hotspur Football Club,Liverpool Football Club,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,72,Liverpool,Watford,2017-18,H,Liverpool Football Club,Watford Football Club,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L2,143,Huddersfield,West Ham,2017-18,A,Huddersfield Town Association Football Club,West Ham United Football Club,2017-18,98,A,0.01,0.02,0.97,True,True,True,True,True,True,0.030459207484708574
+L2,205,Crystal Palace,Stoke,2017-18,H,Crystal Palace Football Club,Stoke City Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
 L2,37,Newcastle,Arsenal,2017-18,H,Newcastle United,Arsenal,2017-18,100,H,0.96,0.025,0.015,True,True,True,True,True,True,0.040821994520255166
 L2,171,Stoke,West Ham,2017-18,A,Stoke City,West Ham United,2017-18,99,A,0.02,0.03,0.95,True,True,True,True,True,True,0.05129329438755058
 L2,189,Watford,Tottenham,2017-18,D,Watford,Tottenham Hotspur,2017-18,99,D,0.03,0.94,0.03,True,True,True,True,True,True,0.06187540371808753
@@ -797,26 +797,26 @@ L3,223,Newcastle,Bournemouth,2017-18,A,Newcastle United,AFC Bournemouth,2017-18,
 L3,86,Crystal Palace,Man United,2017-18,A,Crystal Palace,Manchester United,2017-18,100,A,0.005,0.005,0.99,True,True,True,True,True,True,0.01005033585350145
 L3,1,Newcastle,Chelsea,2017-18,H,Newcastle United,Chelsea,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
 L3,277,Watford,Man City,2017-18,A,Watford,Manchester City,2017-18,100,A,0.002,0.003,0.995,True,True,True,True,True,True,0.005012541823544286
-L3,142,Watford,Southampton,2017-18,D,Watford Football Club,Southampton Football Club,2017-18,99,D,0.02,0.96,0.02,False,False,False,True,False,True,0.040821994520255166
-L3,176,Leicester,Crystal Palace,2017-18,A,Leicester City Football Club,Crystal Palace Football Club,2017-18,99,A,0.01,0.01,0.98,False,False,False,True,False,True,0.020202707317519466
-L3,80,Chelsea,Crystal Palace,2017-18,H,Chelsea Football Club,Crystal Palace Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L3,185,Burnley,Watford,2017-18,H,Burnley Football Club,Watford Football Club,2017-18,99,H,0.96,0.03,0.01,False,False,False,True,False,True,0.040821994520255166
-L3,113,Huddersfield,Bournemouth,2017-18,H,Huddersfield Town Association Football Club,AFC Bournemouth,2017-18,99,H,0.98,0.01,0.01,False,True,False,True,False,True,0.020202707317519466
-L3,125,Burnley,Man City,2017-18,D,Burnley Football Club,Manchester City Football Club,2017-18,100,D,0.005,0.99,0.005,False,False,False,True,False,True,0.01005033585350145
-L3,8,West Ham,Everton,2017-18,H,West Ham United Football Club,Everton Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L3,246,Southampton,Newcastle,2017-18,D,Southampton Football Club,Newcastle United Football Club,2017-18,99,D,0.01,0.98,0.01,False,False,False,True,False,True,0.020202707317519466
-L3,64,Watford,Bournemouth,2017-18,D,Watford Football Club,AFC Bournemouth,2017-18,98,D,0.03,0.94,0.03,False,True,False,True,False,True,0.06187540371808753
-L3,137,Leicester,Watford,2017-18,H,Leicester City Football Club,Watford Football Club,2017-18,99,H,0.97,0.02,0.01,False,False,False,True,False,True,0.030459207484708574
-L3,3,Liverpool,Brighton,2017-18,H,Liverpool Football Club,Brighton & Hove Albion Football Club,2017-18,100,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L3,120,Crystal Palace,Newcastle,2017-18,D,Crystal Palace Football Club,Newcastle United Football Club,2017-18,99,D,0.02,0.96,0.02,False,False,False,True,False,True,0.040821994520255166
-L3,175,Chelsea,Southampton,2017-18,H,Chelsea Football Club,Southampton Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L3,60,Brighton,Leicester,2017-18,A,Brighton & Hove Albion Football Club,Huddersfield Town Association Football Club,2017-18,98,D,0.03,0.95,0.02,False,False,False,True,False,False,3.912023005428146
-L3,225,West Ham,Liverpool,2017-18,A,West Ham United Football Club,Liverpool Football Club,2017-18,100,A,0.005,0.005,0.99,False,False,False,True,False,True,0.01005033585350145
-L3,117,Tottenham,Arsenal,2017-18,H,Tottenham Hotspur Football Club,Arsenal Football Club,2017-18,100,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
-L3,173,Brighton,Burnley,2017-18,D,Brighton & Hove Albion Football Club,Burnley Football Club,2017-18,98,D,0.03,0.94,0.03,False,False,False,True,False,True,0.06187540371808753
-L3,41,Tottenham,Man City,2017-18,A,Tottenham Hotspur Football Club,Manchester City Football Club,2017-18,100,A,0.005,0.005,0.99,False,False,False,True,False,True,0.01005033585350145
-L3,261,Bournemouth,Leicester,2017-18,D,AFC Bournemouth,Leicester City Football Club,2017-18,99,D,0.02,0.96,0.02,True,False,False,True,False,True,0.040821994520255166
-L3,153,Liverpool,Leicester,2017-18,H,Liverpool Football Club,Leicester City Football Club,2017-18,100,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
+L3,142,Watford,Southampton,2017-18,D,Watford Football Club,Southampton Football Club,2017-18,99,D,0.02,0.96,0.02,True,True,True,True,True,True,0.040821994520255166
+L3,176,Leicester,Crystal Palace,2017-18,A,Leicester City Football Club,Crystal Palace Football Club,2017-18,99,A,0.01,0.01,0.98,True,True,True,True,True,True,0.020202707317519466
+L3,80,Chelsea,Crystal Palace,2017-18,H,Chelsea Football Club,Crystal Palace Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L3,185,Burnley,Watford,2017-18,H,Burnley Football Club,Watford Football Club,2017-18,99,H,0.96,0.03,0.01,True,True,True,True,True,True,0.040821994520255166
+L3,113,Huddersfield,Bournemouth,2017-18,H,Huddersfield Town Association Football Club,AFC Bournemouth,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L3,125,Burnley,Man City,2017-18,D,Burnley Football Club,Manchester City Football Club,2017-18,100,D,0.005,0.99,0.005,True,True,True,True,True,True,0.01005033585350145
+L3,8,West Ham,Everton,2017-18,H,West Ham United Football Club,Everton Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L3,246,Southampton,Newcastle,2017-18,D,Southampton Football Club,Newcastle United Football Club,2017-18,99,D,0.01,0.98,0.01,True,True,True,True,True,True,0.020202707317519466
+L3,64,Watford,Bournemouth,2017-18,D,Watford Football Club,AFC Bournemouth,2017-18,98,D,0.03,0.94,0.03,True,True,True,True,True,True,0.06187540371808753
+L3,137,Leicester,Watford,2017-18,H,Leicester City Football Club,Watford Football Club,2017-18,99,H,0.97,0.02,0.01,True,True,True,True,True,True,0.030459207484708574
+L3,3,Liverpool,Brighton,2017-18,H,Liverpool Football Club,Brighton & Hove Albion Football Club,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L3,120,Crystal Palace,Newcastle,2017-18,D,Crystal Palace Football Club,Newcastle United Football Club,2017-18,99,D,0.02,0.96,0.02,True,True,True,True,True,True,0.040821994520255166
+L3,175,Chelsea,Southampton,2017-18,H,Chelsea Football Club,Southampton Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L3,60,Brighton,Leicester,2017-18,A,Brighton & Hove Albion Football Club,Huddersfield Town Association Football Club,2017-18,98,D,0.03,0.95,0.02,True,False,False,True,False,False,3.912023005428146
+L3,225,West Ham,Liverpool,2017-18,A,West Ham United Football Club,Liverpool Football Club,2017-18,100,A,0.005,0.005,0.99,True,True,True,True,True,True,0.01005033585350145
+L3,117,Tottenham,Arsenal,2017-18,H,Tottenham Hotspur Football Club,Arsenal Football Club,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
+L3,173,Brighton,Burnley,2017-18,D,Brighton & Hove Albion Football Club,Burnley Football Club,2017-18,98,D,0.03,0.94,0.03,True,True,True,True,True,True,0.06187540371808753
+L3,41,Tottenham,Man City,2017-18,A,Tottenham Hotspur Football Club,Manchester City Football Club,2017-18,100,A,0.005,0.005,0.99,True,True,True,True,True,True,0.01005033585350145
+L3,261,Bournemouth,Leicester,2017-18,D,AFC Bournemouth,Leicester City Football Club,2017-18,99,D,0.02,0.96,0.02,True,True,True,True,True,True,0.040821994520255166
+L3,153,Liverpool,Leicester,2017-18,H,Liverpool Football Club,Leicester City Football Club,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
 L3,268,Leicester,Liverpool,2017-18,A,Leicester City,Liverpool,2017-18,99,A,0.02,0.02,0.96,True,True,True,True,True,True,0.040821994520255166
 L3,215,Arsenal,Tottenham,2017-18,H,Arsenal,Tottenham Hotspur,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
 L3,209,Man United,Newcastle,2017-18,H,Manchester United,Newcastle United,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
@@ -858,24 +858,24 @@ L4,24,Crystal Palace,Leicester,2017-18,H,Crystal Palace,Leicester City,2017-18,9
 L4,63,Man United,Swansea,2017-18,H,Manchester United,Swansea City,2017-18,100,H,0.99,0.007,0.003,True,True,True,True,True,True,0.01005033585350145
 L4,290,Stoke,Man United,2017-18,D,AFC Bournemouth,Manchester City Football Club,2017-18,18,A,0.12,0.19,0.69,False,False,False,True,False,False,1.6607312068216509
 L4,93,Burnley,Everton,2017-18,H,unknown,unknown,unknown,0,D,0.35,0.36,0.29,False,False,False,False,False,False,1.0498221244986778
-L4,177,Southampton,Arsenal,2017-18,D,Southampton Football Club,Arsenal Football Club,2017-18,99,D,0.08,0.85,0.07,False,False,False,True,False,True,0.16251892949777494
-L4,17,Everton,Southampton,2017-18,D,Everton Football Club,Southampton Football Club,2017-18,99,D,0.05,0.91,0.04,False,False,False,True,False,True,0.09431067947124129
+L4,177,Southampton,Arsenal,2017-18,D,Southampton Football Club,Arsenal Football Club,2017-18,99,D,0.08,0.85,0.07,True,True,True,True,True,True,0.16251892949777494
+L4,17,Everton,Southampton,2017-18,D,Everton Football Club,Southampton Football Club,2017-18,99,D,0.05,0.91,0.04,True,True,True,True,True,True,0.09431067947124129
 L4,204,Man United,Brighton,2017-18,H,Manchester City Football Club,West Bromwich Albion Football Club,2011-12,48,H,0.82,0.12,0.06,False,False,False,False,False,True,0.19845093872383832
-L4,259,Chelsea,Man City,2017-18,A,Chelsea Football Club,Manchester City Football Club,2017-18,99,A,0.04,0.05,0.91,False,False,False,True,False,True,0.09431067947124129
-L4,253,Liverpool,Man United,2017-18,D,Liverpool Football Club,Manchester United Football Club,2017-18,99,D,0.04,0.93,0.03,False,False,False,True,False,True,0.07257069283483537
+L4,259,Chelsea,Man City,2017-18,A,Chelsea Football Club,Manchester City Football Club,2017-18,99,A,0.04,0.05,0.91,True,True,True,True,True,True,0.09431067947124129
+L4,253,Liverpool,Man United,2017-18,D,Liverpool Football Club,Manchester United Football Club,2017-18,99,D,0.04,0.93,0.03,True,True,True,True,True,True,0.07257069283483537
 L4,12,Stoke,Crystal Palace,2017-18,A,unknown,unknown,unknown,0,D,0.36,0.37,0.27,False,False,False,False,False,False,1.3093333199837622
-L4,211,West Brom,Chelsea,2017-18,A,West Bromwich Albion Football Club,Chelsea Football Club,2017-18,98,A,0.03,0.05,0.92,False,False,False,True,False,True,0.08338160893905101
+L4,211,West Brom,Chelsea,2017-18,A,West Bromwich Albion Football Club,Chelsea Football Club,2017-18,98,A,0.03,0.05,0.92,True,True,True,True,True,True,0.08338160893905101
 L4,166,Brighton,Watford,2017-18,H,Hull City Association Football Club,Swansea City Association Football Club,2014-15,39,A,0.24,0.28,0.48,False,False,False,False,False,False,1.4271163556401458
-L4,248,Swansea,Huddersfield,2017-18,H,Swansea City Association Football Club,Huddersfield Town Association Football Club,2017-18,98,H,0.91,0.06,0.03,False,False,False,True,False,True,0.09431067947124129
+L4,248,Swansea,Huddersfield,2017-18,H,Swansea City Association Football Club,Huddersfield Town Association Football Club,2017-18,98,H,0.91,0.06,0.03,True,True,True,True,True,True,0.09431067947124129
 L4,90,Watford,West Brom,2017-18,H,Hull City Association Football Club,Sunderland Association Football Club,2016-17,15,A,0.34,0.27,0.39,False,False,False,False,False,False,1.0788096613719298
 L4,240,Stoke,Bournemouth,2017-18,A,Wigan Athletic Football Club,Bolton Wanderers Football Club,2011-12,15,A,0.32,0.28,0.4,False,False,False,False,False,True,0.916290731874155
-L4,274,Burnley,Huddersfield,2017-18,D,Burnley Football Club,Huddersfield Town Association Football Club,2017-18,97,D,0.06,0.89,0.05,False,False,False,True,False,True,0.11653381625595151
+L4,274,Burnley,Huddersfield,2017-18,D,Burnley Football Club,Huddersfield Town Association Football Club,2017-18,97,D,0.06,0.89,0.05,True,True,True,True,True,True,0.11653381625595151
 L4,255,Everton,Burnley,2017-18,A,Manchester United Football Club,West Bromwich Albion Football Club,2010-11,15,D,0.44,0.45,0.11,False,False,False,False,False,False,2.2072749131897207
-L4,131,Swansea,Liverpool,2017-18,H,Swansea City Association Football Club,Liverpool Football Club,2017-18,100,H,0.96,0.02,0.02,False,False,False,True,False,True,0.040821994520255166
-L4,4,Burnley,Bournemouth,2017-18,A,Burnley Football Club,AFC Bournemouth,2017-18,99,A,0.04,0.05,0.91,False,True,False,True,False,True,0.09431067947124129
+L4,131,Swansea,Liverpool,2017-18,H,Swansea City Association Football Club,Liverpool Football Club,2017-18,100,H,0.96,0.02,0.02,True,True,True,True,True,True,0.040821994520255166
+L4,4,Burnley,Bournemouth,2017-18,A,Burnley Football Club,AFC Bournemouth,2017-18,99,A,0.04,0.05,0.91,True,True,True,True,True,True,0.09431067947124129
 L4,114,Swansea,Burnley,2017-18,H,Reading Football Club,Stoke City Football Club,2012-13,93,H,0.86,0.09,0.05,False,False,False,False,False,True,0.15082288973458366
-L4,135,West Ham,Bournemouth,2017-18,D,West Ham United Football Club,AFC Bournemouth,2017-18,99,D,0.04,0.92,0.04,False,True,False,True,False,True,0.08338160893905101
-L4,121,Liverpool,Tottenham,2017-18,D,Liverpool Football Club,Tottenham Hotspur Football Club,2017-18,100,D,0.02,0.96,0.02,False,False,False,True,False,True,0.040821994520255166
+L4,135,West Ham,Bournemouth,2017-18,D,West Ham United Football Club,AFC Bournemouth,2017-18,99,D,0.04,0.92,0.04,True,True,True,True,True,True,0.08338160893905101
+L4,121,Liverpool,Tottenham,2017-18,D,Liverpool Football Club,Tottenham Hotspur Football Club,2017-18,100,D,0.02,0.96,0.02,True,True,True,True,True,True,0.040821994520255166
 L4,73,Bournemouth,West Brom,2017-18,H,AFC Bournemouth,West Bromwich Albion,2017-18,91,H,0.78,0.15,0.07,True,True,True,True,True,True,0.2484613592984996
 L4,219,Tottenham,Crystal Palace,2017-18,H,Tottenham Hotspur,Crystal Palace,2017-18,98,H,0.94,0.04,0.02,True,True,True,True,True,True,0.06187540371808753
 L4,46,Arsenal,Southampton,2017-18,H,Arsenal,Southampton,2017-18,99,H,0.96,0.03,0.01,True,True,True,True,True,True,0.040821994520255166
@@ -916,26 +916,26 @@ L4,26,Southampton,Bournemouth,2017-18,H,Queens Park Rangers,West Ham United,2014
 L4,100,Brighton,Swansea,2017-18,H,Swansea City,Crystal Palace,2015-16,11,D,0.32,0.37,0.31,False,False,False,False,False,False,1.1394342831883648
 L4,45,Crystal Palace,Brighton,2017-18,H,Liverpool,Everton,2011-12,65,H,0.8,0.14,0.06,False,False,False,False,False,True,0.2231435513142097
 L4,123,Leicester,Swansea,2017-18,D,Leicester City,Swansea City,2017-18,99,D,0.02,0.97,0.01,True,True,True,True,True,True,0.030459207484708574
-L4,167,Everton,Swansea,2017-18,H,Everton Football Club,Swansea City Association Football Club,2017-18,94,H,0.88,0.08,0.04,False,False,False,True,False,True,0.12783337150988489
-L4,29,Arsenal,West Ham,2017-18,H,Arsenal Football Club,West Ham United Football Club,2017-18,100,H,0.99,0.007,0.003,False,False,False,True,False,True,0.01005033585350145
+L4,167,Everton,Swansea,2017-18,H,Everton Football Club,Swansea City Association Football Club,2017-18,94,H,0.88,0.08,0.04,True,True,True,True,True,True,0.12783337150988489
+L4,29,Arsenal,West Ham,2017-18,H,Arsenal Football Club,West Ham United Football Club,2017-18,100,H,0.99,0.007,0.003,True,True,True,True,True,True,0.01005033585350145
 L4,267,Swansea,Watford,2017-18,A,unknown,unknown,unknown,0,A,0.32,0.3,0.38,False,False,False,False,False,True,0.9675840262617056
-L4,34,West Brom,Liverpool,2017-18,D,West Bromwich Albion Football Club,Liverpool Football Club,2017-18,99,D,0.02,0.95,0.03,False,False,False,True,False,True,0.05129329438755058
+L4,34,West Brom,Liverpool,2017-18,D,West Bromwich Albion Football Club,Liverpool Football Club,2017-18,99,D,0.02,0.95,0.03,True,True,True,True,True,True,0.05129329438755058
 L4,281,Crystal Palace,Southampton,2017-18,A,Swansea City Association Football Club,Crystal Palace Football Club,2016-17,58,H,0.64,0.19,0.17,False,False,False,False,False,False,1.7719568419318752
-L4,218,Man City,Arsenal,2017-18,H,Manchester City Football Club,Arsenal Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L4,207,Brighton,Stoke,2017-18,D,Brighton & Hove Albion Football Club,Stoke City Football Club,2017-18,96,D,0.04,0.93,0.03,False,False,False,True,False,True,0.07257069283483537
-L4,88,Tottenham,Huddersfield,2017-18,H,Tottenham Hotspur Football Club,Huddersfield Town Association Football Club,2017-18,99,H,0.98,0.015,0.005,False,False,False,True,False,True,0.020202707317519466
+L4,218,Man City,Arsenal,2017-18,H,Manchester City Football Club,Arsenal Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L4,207,Brighton,Stoke,2017-18,D,Brighton & Hove Albion Football Club,Stoke City Football Club,2017-18,96,D,0.04,0.93,0.03,True,True,True,True,True,True,0.07257069283483537
+L4,88,Tottenham,Huddersfield,2017-18,H,Tottenham Hotspur Football Club,Huddersfield Town Association Football Club,2017-18,99,H,0.98,0.015,0.005,True,True,True,True,True,True,0.020202707317519466
 L4,293,Brighton,West Brom,2017-18,H,Crystal Palace Football Club,AFC Bournemouth,2016-17,77,D,0.14,0.76,0.1,False,False,False,False,False,False,1.9661128563728327
-L4,18,Tottenham,Watford,2017-18,H,Tottenham Hotspur Football Club,Watford Football Club,2017-18,99,H,0.98,0.015,0.005,False,False,False,True,False,True,0.020202707317519466
-L4,180,Newcastle,Leicester,2017-18,A,Newcastle United Football Club,Leicester City Football Club,2017-18,98,A,0.02,0.03,0.95,False,False,False,True,False,True,0.05129329438755058
-L4,170,Watford,Huddersfield,2017-18,A,Watford Football Club,Stoke City Football Club,2016-17,83,A,0.08,0.1,0.82,False,False,False,False,False,True,0.19845093872383832
-L4,245,Brighton,Everton,2017-18,D,Brighton & Hove Albion Football Club,Everton Football Club,2017-18,95,D,0.04,0.92,0.04,False,False,False,True,False,True,0.08338160893905101
-L4,147,Crystal Palace,Burnley,2017-18,H,Crystal Palace Football Club,Burnley Football Club,2017-18,98,H,0.96,0.03,0.01,False,False,False,True,False,True,0.040821994520255166
-L4,249,Tottenham,Bournemouth,2017-18,H,Tottenham Hotspur Football Club,AFC Bournemouth,2017-18,99,H,0.98,0.015,0.005,False,True,False,True,False,True,0.020202707317519466
-L4,75,Stoke,Man City,2017-18,A,Stoke City Football Club,Manchester City Football Club,2017-18,100,A,0.005,0.005,0.99,False,False,False,True,False,True,0.01005033585350145
+L4,18,Tottenham,Watford,2017-18,H,Tottenham Hotspur Football Club,Watford Football Club,2017-18,99,H,0.98,0.015,0.005,True,True,True,True,True,True,0.020202707317519466
+L4,180,Newcastle,Leicester,2017-18,A,Newcastle United Football Club,Leicester City Football Club,2017-18,98,A,0.02,0.03,0.95,True,True,True,True,True,True,0.05129329438755058
+L4,170,Watford,Huddersfield,2017-18,A,Watford Football Club,Stoke City Football Club,2016-17,83,A,0.08,0.1,0.82,True,False,False,False,False,True,0.19845093872383832
+L4,245,Brighton,Everton,2017-18,D,Brighton & Hove Albion Football Club,Everton Football Club,2017-18,95,D,0.04,0.92,0.04,True,True,True,True,True,True,0.08338160893905101
+L4,147,Crystal Palace,Burnley,2017-18,H,Crystal Palace Football Club,Burnley Football Club,2017-18,98,H,0.96,0.03,0.01,True,True,True,True,True,True,0.040821994520255166
+L4,249,Tottenham,Bournemouth,2017-18,H,Tottenham Hotspur Football Club,AFC Bournemouth,2017-18,99,H,0.98,0.015,0.005,True,True,True,True,True,True,0.020202707317519466
+L4,75,Stoke,Man City,2017-18,A,Stoke City Football Club,Manchester City Football Club,2017-18,100,A,0.005,0.005,0.99,True,True,True,True,True,True,0.01005033585350145
 L4,236,Tottenham,Liverpool,2017-18,H,unknown,Manchester United Football Club,unknown,12,D,0.25,0.4,0.35,False,False,False,False,False,False,1.3862943611198906
-L4,72,Liverpool,Watford,2017-18,H,Liverpool Football Club,Watford Football Club,2017-18,99,H,0.99,0.007,0.003,False,False,False,True,False,True,0.01005033585350145
+L4,72,Liverpool,Watford,2017-18,H,Liverpool Football Club,Watford Football Club,2017-18,99,H,0.99,0.007,0.003,True,True,True,True,True,True,0.01005033585350145
 L4,143,Huddersfield,West Ham,2017-18,A,Sunderland Association Football Club,Norwich City Football Club,2011-12,73,H,0.78,0.13,0.09,False,False,False,False,False,False,2.4079456086518722
-L4,205,Crystal Palace,Stoke,2017-18,H,Crystal Palace Football Club,Stoke City Football Club,2017-18,98,H,0.96,0.03,0.01,False,False,False,True,False,True,0.040821994520255166
+L4,205,Crystal Palace,Stoke,2017-18,H,Crystal Palace Football Club,Stoke City Football Club,2017-18,98,H,0.96,0.03,0.01,True,True,True,True,True,True,0.040821994520255166
 L4,37,Newcastle,Arsenal,2017-18,H,Swansea City,Tottenham Hotspur,2015-16,25,D,0.25,0.35,0.4,False,False,False,False,False,False,1.3862943611198906
 L4,171,Stoke,West Ham,2017-18,A,Newcastle United,Norwich City,2015-16,33,H,0.48,0.28,0.24,False,False,False,False,False,False,1.4271163556401458
 L4,189,Watford,Tottenham,2017-18,D,Tottenham Hotspur,Manchester United,2020-21,35,A,0.32,0.27,0.41,False,False,False,False,False,False,1.3093333199837622
@@ -1076,26 +1076,26 @@ L4,223,Newcastle,Bournemouth,2017-18,A,Newcastle United,Bournemouth,2017-18,97,A
 L4,86,Crystal Palace,Man United,2017-18,A,Huddersfield Town,Liverpool,2017-18,45,A,0.12,0.2,0.68,False,False,False,True,False,True,0.3856624808119846
 L4,1,Newcastle,Chelsea,2017-18,H,Newcastle United,Chelsea,2017-18,100,H,0.95,0.03,0.02,True,True,True,True,True,True,0.05129329438755058
 L4,277,Watford,Man City,2017-18,A,Watford,Manchester City,2017-18,99,A,0.02,0.03,0.95,True,True,True,True,True,True,0.05129329438755058
-L4,142,Watford,Southampton,2017-18,D,Watford Football Club,Swansea City Association Football Club,2017-18,32,A,0.42,0.29,0.29,False,False,False,True,False,False,1.2378743560016174
-L4,176,Leicester,Crystal Palace,2017-18,A,Leicester City Football Club,Crystal Palace Football Club,2017-18,94,A,0.08,0.12,0.8,False,False,False,True,False,True,0.2231435513142097
-L4,80,Chelsea,Crystal Palace,2017-18,H,Chelsea Football Club,AFC Bournemouth,2015-16,24,A,0.4,0.25,0.35,False,False,False,False,False,False,0.916290731874155
-L4,185,Burnley,Watford,2017-18,H,Burnley Football Club,Watford Football Club,2017-18,96,H,0.86,0.1,0.04,False,False,False,True,False,True,0.15082288973458366
+L4,142,Watford,Southampton,2017-18,D,Watford Football Club,Swansea City Association Football Club,2017-18,32,A,0.42,0.29,0.29,True,False,False,True,False,False,1.2378743560016174
+L4,176,Leicester,Crystal Palace,2017-18,A,Leicester City Football Club,Crystal Palace Football Club,2017-18,94,A,0.08,0.12,0.8,True,True,True,True,True,True,0.2231435513142097
+L4,80,Chelsea,Crystal Palace,2017-18,H,Chelsea Football Club,AFC Bournemouth,2015-16,24,A,0.4,0.25,0.35,True,False,False,False,False,False,0.916290731874155
+L4,185,Burnley,Watford,2017-18,H,Burnley Football Club,Watford Football Club,2017-18,96,H,0.86,0.1,0.04,True,True,True,True,True,True,0.15082288973458366
 L4,113,Huddersfield,Bournemouth,2017-18,H,Crystal Palace Football Club,Everton Football Club,2016-17,91,A,0.08,0.15,0.77,False,False,False,False,False,False,2.5257286443082556
-L4,125,Burnley,Man City,2017-18,D,Burnley Football Club,Manchester City Football Club,2017-18,99,D,0.02,0.95,0.03,False,False,False,True,False,True,0.05129329438755058
+L4,125,Burnley,Man City,2017-18,D,Burnley Football Club,Manchester City Football Club,2017-18,99,D,0.02,0.95,0.03,True,True,True,True,True,True,0.05129329438755058
 L4,8,West Ham,Everton,2017-18,H,unknown,unknown,unknown,0,D,0.35,0.35,0.3,False,False,False,False,False,False,1.0498221244986778
-L4,246,Southampton,Newcastle,2017-18,D,Southampton Football Club,Newcastle United Football Club,2017-18,97,D,0.04,0.92,0.04,False,False,False,True,False,True,0.08338160893905101
+L4,246,Southampton,Newcastle,2017-18,D,Southampton Football Club,Newcastle United Football Club,2017-18,97,D,0.04,0.92,0.04,True,True,True,True,True,True,0.08338160893905101
 L4,64,Watford,Bournemouth,2017-18,D,Stoke City Football Club,Swansea City Association Football Club,2015-16,40,D,0.28,0.47,0.25,False,False,False,False,False,True,0.7550225842780328
 L4,137,Leicester,Watford,2017-18,H,Stoke City Football Club,Crystal Palace Football Club,2015-16,55,H,0.62,0.22,0.16,False,False,False,False,False,True,0.4780358009429998
-L4,3,Liverpool,Brighton,2017-18,H,Liverpool Football Club,Brighton & Hove Albion Football Club,2017-18,100,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
+L4,3,Liverpool,Brighton,2017-18,H,Liverpool Football Club,Brighton & Hove Albion Football Club,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
 L4,120,Crystal Palace,Newcastle,2017-18,D,unknown,unknown,unknown,0,H,0.42,0.29,0.29,False,False,False,False,False,False,1.2378743560016174
 L4,175,Chelsea,Southampton,2017-18,H,Manchester City Football Club,Newcastle United Football Club,2017-18,15,H,0.68,0.2,0.12,False,False,False,True,False,True,0.3856624808119846
 L4,60,Brighton,Leicester,2017-18,A,Leicester City Football Club,Stoke City Football Club,2016-17,85,H,0.84,0.1,0.06,False,False,False,False,False,False,2.8134107167600364
 L4,225,West Ham,Liverpool,2017-18,A,Swansea City Association Football Club,Arsenal Football Club,2015-16,22,A,0.19,0.23,0.58,False,False,False,False,False,True,0.5447271754416722
-L4,117,Tottenham,Arsenal,2017-18,H,Tottenham Hotspur Football Club,Manchester United Football Club,2017-18,100,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L4,173,Brighton,Burnley,2017-18,D,Brighton & Hove Albion Football Club,Burnley Football Club,2017-18,94,D,0.07,0.87,0.06,False,False,False,True,False,True,0.13926206733350766
-L4,41,Tottenham,Man City,2017-18,A,Tottenham Hotspur Football Club,Manchester City Football Club,2017-18,100,A,0.01,0.01,0.98,False,False,False,True,False,True,0.020202707317519466
+L4,117,Tottenham,Arsenal,2017-18,H,Tottenham Hotspur Football Club,Manchester United Football Club,2017-18,100,H,0.98,0.01,0.01,True,False,False,True,False,True,0.020202707317519466
+L4,173,Brighton,Burnley,2017-18,D,Brighton & Hove Albion Football Club,Burnley Football Club,2017-18,94,D,0.07,0.87,0.06,True,True,True,True,True,True,0.13926206733350766
+L4,41,Tottenham,Man City,2017-18,A,Tottenham Hotspur Football Club,Manchester City Football Club,2017-18,100,A,0.01,0.01,0.98,True,True,True,True,True,True,0.020202707317519466
 L4,261,Bournemouth,Leicester,2017-18,D,unknown,unknown,unknown,0,D,0.36,0.34,0.3,False,False,False,False,False,True,1.0788096613719298
-L4,153,Liverpool,Leicester,2017-18,H,Liverpool Football Club,Leicester City Football Club,2017-18,100,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
+L4,153,Liverpool,Leicester,2017-18,H,Liverpool Football Club,Leicester City Football Club,2017-18,100,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
 L4,268,Leicester,Liverpool,2017-18,A,Leicester City,Liverpool,2017-18,98,A,0.08,0.09,0.83,True,True,True,True,True,True,0.18632957819149348
 L4,215,Arsenal,Tottenham,2017-18,H,Manchester United,Manchester City,2014-15,70,H,0.7,0.17,0.13,False,False,False,False,False,True,0.35667494393873245
 L4,209,Man United,Newcastle,2017-18,H,Manchester City,Tottenham Hotspur,2013-14,50,H,0.7,0.17,0.13,False,False,False,False,False,True,0.35667494393873245
@@ -1175,46 +1175,46 @@ L5,21,Burnley,Brighton,2017-18,D,Wolverhampton Wanderers,Brighton & Hove Albion,
 L5,286,Swansea,Newcastle,2017-18,A,Everton,Norwich City,2011-12,15,D,0.4,0.36,0.24,False,False,False,False,False,False,1.4271163556401458
 L5,87,Southampton,Stoke,2017-18,D,Sunderland,West Bromwich Albion,2014-15,87,D,0.08,0.86,0.06,False,False,False,False,False,True,0.15082288973458366
 L5,7,Crystal Palace,West Brom,2017-18,H,Crystal Palace,West Bromwich Albion,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
-L5,194,Chelsea,Newcastle,2017-18,H,Chelsea Football Club,Newcastle United Football Club,2017-18,94,H,0.86,0.1,0.04,False,False,False,True,False,True,0.15082288973458366
+L5,194,Chelsea,Newcastle,2017-18,H,Chelsea Football Club,Newcastle United Football Club,2017-18,94,H,0.86,0.1,0.04,True,True,True,True,True,True,0.15082288973458366
 L5,206,Watford,West Ham,2017-18,H,West Bromwich Albion Football Club,Sunderland Association Football Club,2015-16,92,H,0.64,0.24,0.12,False,False,False,False,False,True,0.4462871026284195
 L5,278,Huddersfield,Leicester,2017-18,D,AFC Bournemouth,Tottenham Hotspur Football Club,2015-16,83,A,0.13,0.2,0.67,False,False,False,False,False,False,1.6094379124341003
 L5,35,Watford,Crystal Palace,2017-18,D,AFC Bournemouth,Swansea City Association Football Club,2016-17,87,H,0.64,0.23,0.13,False,False,False,False,False,False,1.4696759700589417
-L5,183,Tottenham,Stoke,2017-18,H,Tottenham Hotspur Football Club,Stoke City Football Club,2017-18,94,H,0.87,0.09,0.04,False,False,False,True,False,True,0.13926206733350766
-L5,59,Everton,Man City,2017-18,A,Everton Football Club,Manchester City Football Club,2017-18,99,A,0.04,0.08,0.88,False,False,False,True,False,True,0.12783337150988489
+L5,183,Tottenham,Stoke,2017-18,H,Tottenham Hotspur Football Club,Stoke City Football Club,2017-18,94,H,0.87,0.09,0.04,True,True,True,True,True,True,0.13926206733350766
+L5,59,Everton,Man City,2017-18,A,Everton Football Club,Manchester City Football Club,2017-18,99,A,0.04,0.08,0.88,True,True,True,True,True,True,0.12783337150988489
 L5,129,West Brom,Southampton,2017-18,A,Cardiff City Football Club,Norwich City Football Club,2013-14,35,H,0.44,0.31,0.25,False,False,False,False,False,False,1.3862943611198906
-L5,179,Liverpool,Everton,2017-18,D,Liverpool Football Club,Everton Football Club,2017-18,99,D,0.12,0.83,0.05,False,False,False,True,False,True,0.18632957819149348
-L5,42,Southampton,Chelsea,2017-18,A,Swansea City Association Football Club,Chelsea Football Club,2015-16,85,H,0.74,0.16,0.1,False,False,False,False,False,False,2.3025850929940455
-L5,247,Leicester,West Brom,2017-18,D,Leicester City Football Club,West Bromwich Albion Football Club,2017-18,98,D,0.1,0.84,0.06,False,False,False,True,False,True,0.1743533871447778
-L5,15,Leicester,West Ham,2017-18,A,Swansea City Association Football Club,West Ham United Football Club,2016-17,15,A,0.31,0.27,0.42,False,False,False,False,False,True,0.8675005677047231
+L5,179,Liverpool,Everton,2017-18,D,Liverpool Football Club,Everton Football Club,2017-18,99,D,0.12,0.83,0.05,True,True,True,True,True,True,0.18632957819149348
+L5,42,Southampton,Chelsea,2017-18,A,Swansea City Association Football Club,Chelsea Football Club,2015-16,85,H,0.74,0.16,0.1,False,True,False,False,False,False,2.3025850929940455
+L5,247,Leicester,West Brom,2017-18,D,Leicester City Football Club,West Bromwich Albion Football Club,2017-18,98,D,0.1,0.84,0.06,True,True,True,True,True,True,0.1743533871447778
+L5,15,Leicester,West Ham,2017-18,A,Swansea City Association Football Club,West Ham United Football Club,2016-17,15,A,0.31,0.27,0.42,False,True,False,False,False,True,0.8675005677047231
 L5,152,Huddersfield,Burnley,2017-18,D,Watford Football Club,Leicester City Football Club,2015-16,88,A,0.09,0.16,0.75,False,False,False,False,False,False,1.8325814637483102
 L5,2,Tottenham,Leicester,2017-18,H,Arsenal Football Club,West Bromwich Albion Football Club,2014-15,58,H,0.73,0.17,0.1,False,False,False,False,False,True,0.31471074483970024
-L5,201,Tottenham,West Brom,2017-18,D,Tottenham Hotspur Football Club,West Bromwich Albion Football Club,2017-18,36,D,0.46,0.38,0.16,False,False,False,True,False,True,0.9675840262617056
+L5,201,Tottenham,West Brom,2017-18,D,Tottenham Hotspur Football Club,West Bromwich Albion Football Club,2017-18,36,D,0.46,0.38,0.16,True,True,True,True,True,True,0.9675840262617056
 L5,32,Stoke,Burnley,2017-18,D,Fulham Football Club,Everton Football Club,2013-14,31,A,0.21,0.25,0.54,False,False,False,False,False,False,1.3862943611198906
-L5,65,Crystal Palace,Liverpool,2017-18,A,Southampton Football Club,Liverpool Football Club,2013-14,62,A,0.16,0.21,0.63,False,False,False,False,False,True,0.4620354595965587
+L5,65,Crystal Palace,Liverpool,2017-18,A,Southampton Football Club,Liverpool Football Club,2013-14,62,A,0.16,0.21,0.63,False,True,False,False,False,True,0.4620354595965587
 L5,26,Southampton,Bournemouth,2017-18,H,Queens Park Rangers Football Club,Chelsea Football Club,2012-13,22,A,0.2,0.25,0.55,False,False,False,False,False,False,1.6094379124341003
 L5,100,Brighton,Swansea,2017-18,H,Burnley Football Club,Sunderland Association Football Club,2016-17,15,D,0.34,0.36,0.3,False,False,False,False,False,False,1.0788096613719298
 L5,45,Crystal Palace,Brighton,2017-18,H,Southampton Football Club,AFC Bournemouth,2016-17,82,D,0.18,0.7,0.12,False,False,False,False,False,False,1.7147984280919266
-L5,123,Leicester,Swansea,2017-18,D,Leicester City Football Club,Swansea City Association Football Club,2017-18,98,D,0.09,0.86,0.05,False,False,False,True,False,True,0.15082288973458366
-L5,167,Everton,Swansea,2017-18,H,Everton Football Club,Swansea City Association Football Club,2017-18,91,H,0.83,0.12,0.05,False,False,False,True,False,True,0.18632957819149348
-L5,29,Arsenal,West Ham,2017-18,H,Arsenal Football Club,West Ham United Football Club,2017-18,100,H,0.99,0.005,0.005,False,False,False,True,False,True,0.01005033585350145
+L5,123,Leicester,Swansea,2017-18,D,Leicester City Football Club,Swansea City Association Football Club,2017-18,98,D,0.09,0.86,0.05,True,True,True,True,True,True,0.15082288973458366
+L5,167,Everton,Swansea,2017-18,H,Everton Football Club,Swansea City Association Football Club,2017-18,91,H,0.83,0.12,0.05,True,True,True,True,True,True,0.18632957819149348
+L5,29,Arsenal,West Ham,2017-18,H,Arsenal Football Club,West Ham United Football Club,2017-18,100,H,0.99,0.005,0.005,True,True,True,True,True,True,0.01005033585350145
 L5,267,Swansea,Watford,2017-18,A,unknown,Wigan Athletic Football Club,2010-11,25,H,0.44,0.29,0.27,False,False,False,False,False,False,1.3093333199837622
-L5,34,West Brom,Liverpool,2017-18,D,West Bromwich Albion Football Club,Liverpool Football Club,2017-18,99,D,0.02,0.96,0.02,False,False,False,True,False,True,0.040821994520255166
+L5,34,West Brom,Liverpool,2017-18,D,West Bromwich Albion Football Club,Liverpool Football Club,2017-18,99,D,0.02,0.96,0.02,True,True,True,True,True,True,0.040821994520255166
 L5,281,Crystal Palace,Southampton,2017-18,A,unknown,unknown,unknown,0,H,0.43,0.3,0.27,False,False,False,False,False,False,1.3093333199837622
-L5,218,Man City,Arsenal,2017-18,H,Manchester City Football Club,Arsenal Football Club,2017-18,99,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
+L5,218,Man City,Arsenal,2017-18,H,Manchester City Football Club,Arsenal Football Club,2017-18,99,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
 L5,207,Brighton,Stoke,2017-18,D,Stoke City Football Club,AFC Bournemouth,2016-17,72,A,0.18,0.2,0.62,False,False,False,False,False,False,1.6094379124341003
-L5,88,Tottenham,Huddersfield,2017-18,H,Tottenham Hotspur Football Club,Huddersfield Town Association Football Club,2017-18,99,H,0.98,0.015,0.005,False,False,False,True,False,True,0.020202707317519466
+L5,88,Tottenham,Huddersfield,2017-18,H,Tottenham Hotspur Football Club,Huddersfield Town Association Football Club,2017-18,99,H,0.98,0.015,0.005,True,True,True,True,True,True,0.020202707317519466
 L5,293,Brighton,West Brom,2017-18,H,Crystal Palace Football Club,Southampton Football Club,2017-18,35,A,0.25,0.29,0.46,False,False,False,True,False,False,1.3862943611198906
-L5,18,Tottenham,Watford,2017-18,H,Tottenham Hotspur Football Club,Watford Football Club,2017-18,94,H,0.94,0.04,0.02,False,False,False,True,False,True,0.06187540371808753
-L5,180,Newcastle,Leicester,2017-18,A,Newcastle United Football Club,Leicester City Football Club,2017-18,97,A,0.03,0.05,0.92,False,False,False,True,False,True,0.08338160893905101
+L5,18,Tottenham,Watford,2017-18,H,Tottenham Hotspur Football Club,Watford Football Club,2017-18,94,H,0.94,0.04,0.02,True,True,True,True,True,True,0.06187540371808753
+L5,180,Newcastle,Leicester,2017-18,A,Newcastle United Football Club,Leicester City Football Club,2017-18,97,A,0.03,0.05,0.92,True,True,True,True,True,True,0.08338160893905101
 L5,170,Watford,Huddersfield,2017-18,A,unknown,unknown,unknown,0,D,0.36,0.35,0.29,False,False,False,False,False,False,1.2378743560016174
 L5,245,Brighton,Everton,2017-18,D,Arsenal Football Club,AFC Bournemouth,2017-18,69,H,0.77,0.15,0.08,False,False,False,True,False,False,1.8971199848858813
-L5,147,Crystal Palace,Burnley,2017-18,H,Crystal Palace Football Club,Burnley Football Club,2017-18,88,H,0.81,0.13,0.06,False,False,False,True,False,True,0.21072103131565253
-L5,249,Tottenham,Bournemouth,2017-18,H,Tottenham Hotspur Football Club,AFC Bournemouth,2017-18,98,H,0.97,0.02,0.01,False,True,False,True,False,True,0.030459207484708574
+L5,147,Crystal Palace,Burnley,2017-18,H,Crystal Palace Football Club,Burnley Football Club,2017-18,88,H,0.81,0.13,0.06,True,True,True,True,True,True,0.21072103131565253
+L5,249,Tottenham,Bournemouth,2017-18,H,Tottenham Hotspur Football Club,AFC Bournemouth,2017-18,98,H,0.97,0.02,0.01,True,True,True,True,True,True,0.030459207484708574
 L5,75,Stoke,Man City,2017-18,A,Southampton Football Club,Tottenham Hotspur Football Club,1999-00,42,H,0.48,0.27,0.25,False,False,False,False,False,False,1.3862943611198906
 L5,236,Tottenham,Liverpool,2017-18,H,Crystal Palace Football Club,Manchester United Football Club,2015-16,65,D,0.19,0.6,0.21,False,False,False,False,False,False,1.6607312068216509
 L5,72,Liverpool,Watford,2017-18,H,Manchester City Football Club,West Bromwich Albion Football Club,2015-16,91,H,0.91,0.06,0.03,False,False,False,False,False,True,0.09431067947124129
-L5,143,Huddersfield,West Ham,2017-18,A,Swansea City Association Football Club,West Ham United Football Club,2012-13,34,H,0.48,0.29,0.23,False,False,False,False,False,False,1.4696759700589417
-L5,205,Crystal Palace,Stoke,2017-18,H,Crystal Palace Football Club,Everton Football Club,2017-18,92,D,0.06,0.89,0.05,False,False,False,True,False,False,2.8134107167600364
+L5,143,Huddersfield,West Ham,2017-18,A,Swansea City Association Football Club,West Ham United Football Club,2012-13,34,H,0.48,0.29,0.23,False,True,False,False,False,False,1.4696759700589417
+L5,205,Crystal Palace,Stoke,2017-18,H,Crystal Palace Football Club,Everton Football Club,2017-18,92,D,0.06,0.89,0.05,True,False,False,True,False,False,2.8134107167600364
 L5,37,Newcastle,Arsenal,2017-18,H,Sunderland AFC,Tottenham Hotspur FC,2012-13,15,A,0.24,0.26,0.5,False,False,False,False,False,False,1.4271163556401458
 L5,171,Stoke,West Ham,2017-18,A,Everton FC,Watford FC,2017-18,38,H,0.48,0.27,0.25,False,False,False,True,False,False,1.3862943611198906
 L5,189,Watford,Tottenham,2017-18,D,Liverpool FC,Chelsea FC,2022-23,91,D,0.16,0.7,0.14,False,False,False,False,False,True,0.35667494393873245
@@ -1335,26 +1335,26 @@ L5,103,West Brom,Huddersfield,2017-18,A,West Bromwich Albion,Huddersfield Town,2
 L5,222,Huddersfield,West Brom,2017-18,H,West Bromwich Albion,Sunderland,2016-17,33,H,0.61,0.25,0.14,False,False,False,False,False,True,0.4942963218147801
 L5,161,Burnley,Tottenham,2017-18,A,Leicester City,Everton,2015-16,98,H,0.93,0.05,0.02,False,False,False,False,False,False,3.912023005428146
 L5,237,Everton,Arsenal,2017-18,A,Aston Villa,Arsenal,2014-15,27,A,0.18,0.25,0.57,False,True,False,False,False,True,0.5621189181535413
-L5,197,Huddersfield,Man City,2017-18,A,Crystal Palace Football Club,Manchester City Football Club,2015-16,35,A,0.16,0.21,0.63,False,False,False,False,False,True,0.4620354595965587
+L5,197,Huddersfield,Man City,2017-18,A,Crystal Palace Football Club,Manchester City Football Club,2015-16,35,A,0.16,0.21,0.63,False,True,False,False,False,True,0.4620354595965587
 L5,40,Swansea,Everton,2017-18,D,Queens Park Rangers Football Club,Stoke City Football Club,2011-12,48,H,0.57,0.26,0.17,False,False,False,False,False,False,1.3470736479666092
-L5,212,Crystal Palace,Everton,2017-18,D,Crystal Palace Football Club,Everton Football Club,2017-18,95,D,0.25,0.57,0.18,False,False,False,True,False,True,0.5621189181535413
-L5,48,Watford,Burnley,2017-18,A,Watford Football Club,Burnley Football Club,2017-18,93,A,0.18,0.23,0.59,False,False,False,True,False,True,0.527632742082372
-L5,262,Huddersfield,Tottenham,2017-18,A,Huddersfield Town Association Football Club,Tottenham Hotspur Football Club,2017-18,100,A,0.02,0.04,0.94,False,False,False,True,False,True,0.06187540371808753
-L5,163,Man City,Bournemouth,2017-18,H,Manchester City Football Club,AFC Bournemouth,2017-18,98,H,0.97,0.02,0.01,False,True,False,True,False,True,0.030459207484708574
-L5,208,Leicester,Man City,2017-18,A,Leicester City Football Club,Manchester City Football Club,2017-18,100,A,0.02,0.04,0.94,False,False,False,True,False,True,0.06187540371808753
-L5,55,Bournemouth,Crystal Palace,2017-18,D,Huddersfield Town Association Football Club,Crystal Palace Football Club,2017-18,78,A,0.16,0.22,0.62,False,False,False,True,False,False,1.5141277326297755
+L5,212,Crystal Palace,Everton,2017-18,D,Crystal Palace Football Club,Everton Football Club,2017-18,95,D,0.25,0.57,0.18,True,True,True,True,True,True,0.5621189181535413
+L5,48,Watford,Burnley,2017-18,A,Watford Football Club,Burnley Football Club,2017-18,93,A,0.18,0.23,0.59,True,True,True,True,True,True,0.527632742082372
+L5,262,Huddersfield,Tottenham,2017-18,A,Huddersfield Town Association Football Club,Tottenham Hotspur Football Club,2017-18,100,A,0.02,0.04,0.94,True,True,True,True,True,True,0.06187540371808753
+L5,163,Man City,Bournemouth,2017-18,H,Manchester City Football Club,AFC Bournemouth,2017-18,98,H,0.97,0.02,0.01,True,True,True,True,True,True,0.030459207484708574
+L5,208,Leicester,Man City,2017-18,A,Leicester City Football Club,Manchester City Football Club,2017-18,100,A,0.02,0.04,0.94,True,True,True,True,True,True,0.06187540371808753
+L5,55,Bournemouth,Crystal Palace,2017-18,D,Huddersfield Town Association Football Club,Crystal Palace Football Club,2017-18,78,A,0.16,0.22,0.62,False,True,False,True,False,False,1.5141277326297755
 L5,134,Burnley,Man United,2017-18,A,Sunderland Association Football Club,Liverpool Football Club,2014-15,12,A,0.23,0.3,0.47,False,False,False,False,False,True,0.7550225842780328
-L5,13,West Brom,Tottenham,2017-18,H,West Bromwich Albion Football Club,Tottenham Hotspur Football Club,2017-18,99,H,0.88,0.07,0.05,False,False,False,True,False,True,0.12783337150988489
+L5,13,West Brom,Tottenham,2017-18,H,West Bromwich Albion Football Club,Tottenham Hotspur Football Club,2017-18,99,H,0.88,0.07,0.05,True,True,True,True,True,True,0.12783337150988489
 L5,157,Bournemouth,Everton,2017-18,H,Everton Football Club,Swansea City Association Football Club,2015-16,18,A,0.34,0.28,0.38,False,False,False,False,False,False,1.0788096613719298
-L5,84,Brighton,Arsenal,2017-18,H,Brighton & Hove Albion Football Club,Arsenal Football Club,2017-18,99,H,0.92,0.05,0.03,False,False,False,True,False,True,0.08338160893905101
-L5,28,Everton,Newcastle,2017-18,H,Everton Football Club,Newcastle United Football Club,2017-18,97,H,0.87,0.09,0.04,False,False,False,True,False,True,0.13926206733350766
-L5,119,Everton,Crystal Palace,2017-18,H,Everton Football Club,Crystal Palace Football Club,2017-18,100,H,0.95,0.03,0.02,False,False,False,True,False,True,0.05129329438755058
-L5,115,Man City,Leicester,2017-18,H,Manchester City Football Club,Leicester City Football Club,2017-18,100,H,0.98,0.01,0.01,False,False,False,True,False,True,0.020202707317519466
-L5,226,Burnley,Newcastle,2017-18,H,Burnley Football Club,Newcastle United Football Club,2017-18,94,H,0.8,0.15,0.05,False,False,False,True,False,True,0.2231435513142097
-L5,223,Newcastle,Bournemouth,2017-18,A,Newcastle United Football Club,Leicester City Football Club,2017-18,86,A,0.15,0.15,0.7,False,False,False,True,False,True,0.35667494393873245
-L5,86,Crystal Palace,Man United,2017-18,A,Norwich City Football Club,Manchester United Football Club,2019-20,86,A,0.08,0.12,0.8,False,False,False,False,False,True,0.2231435513142097
-L5,1,Newcastle,Chelsea,2017-18,H,Newcastle United Football Club,Chelsea Football Club,2017-18,100,H,0.96,0.02,0.02,False,False,False,True,False,True,0.040821994520255166
-L5,277,Watford,Man City,2017-18,A,Crystal Palace Football Club,Manchester City Football Club,2020-21,5,A,0.23,0.26,0.51,False,False,False,False,False,True,0.6733445532637656
+L5,84,Brighton,Arsenal,2017-18,H,Brighton & Hove Albion Football Club,Arsenal Football Club,2017-18,99,H,0.92,0.05,0.03,True,True,True,True,True,True,0.08338160893905101
+L5,28,Everton,Newcastle,2017-18,H,Everton Football Club,Newcastle United Football Club,2017-18,97,H,0.87,0.09,0.04,True,True,True,True,True,True,0.13926206733350766
+L5,119,Everton,Crystal Palace,2017-18,H,Everton Football Club,Crystal Palace Football Club,2017-18,100,H,0.95,0.03,0.02,True,True,True,True,True,True,0.05129329438755058
+L5,115,Man City,Leicester,2017-18,H,Manchester City Football Club,Leicester City Football Club,2017-18,100,H,0.98,0.01,0.01,True,True,True,True,True,True,0.020202707317519466
+L5,226,Burnley,Newcastle,2017-18,H,Burnley Football Club,Newcastle United Football Club,2017-18,94,H,0.8,0.15,0.05,True,True,True,True,True,True,0.2231435513142097
+L5,223,Newcastle,Bournemouth,2017-18,A,Newcastle United Football Club,Leicester City Football Club,2017-18,86,A,0.15,0.15,0.7,True,False,False,True,False,True,0.35667494393873245
+L5,86,Crystal Palace,Man United,2017-18,A,Norwich City Football Club,Manchester United Football Club,2019-20,86,A,0.08,0.12,0.8,False,True,False,False,False,True,0.2231435513142097
+L5,1,Newcastle,Chelsea,2017-18,H,Newcastle United Football Club,Chelsea Football Club,2017-18,100,H,0.96,0.02,0.02,True,True,True,True,True,True,0.040821994520255166
+L5,277,Watford,Man City,2017-18,A,Crystal Palace Football Club,Manchester City Football Club,2020-21,5,A,0.23,0.26,0.51,False,True,False,False,False,True,0.6733445532637656
 L5,142,Watford,Southampton,2017-18,D,Norwich City,Fulham,2013-14,78,A,0.2,0.23,0.57,False,False,False,False,False,False,1.4696759700589417
 L5,176,Leicester,Crystal Palace,2017-18,A,Leicester City,Crystal Palace,2017-18,96,A,0.05,0.07,0.88,True,True,True,True,True,True,0.12783337150988489
 L5,80,Chelsea,Crystal Palace,2017-18,H,Leicester City,West Bromwich Albion,2016-17,49,A,0.29,0.25,0.46,False,False,False,False,False,False,1.2378743560016174
